@@ -5,7 +5,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
 }
 
 .logo-container {
@@ -40,6 +40,7 @@ nav a {
     text-decoration: none;
     color: #1C3B58;
     font-size: 16px;
+    font-weight: 400;
 }
 
 nav a:hover {

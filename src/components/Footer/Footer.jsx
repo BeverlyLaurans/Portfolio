@@ -14,7 +14,7 @@ function Footer() {
                 </ul>
             </div>
             <div className="social-links">
-                <a href="#"><img src={linkedinIcon}></img></a>
+                <a href="https://fr.linkedin.com/in/beverlylaurans"><img src={linkedinIcon} alt="Icône LinkedIn"></img></a>
             </div>
         </div>
       </footer>

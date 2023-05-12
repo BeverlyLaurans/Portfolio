@@ -1,5 +1,7 @@
 footer {
+    margin-top: 100px;
     font-size: 14px;
+    font-weight: 400;
 }
 
 hr {
@@ -7,7 +9,7 @@ hr {
 }
 
 .footer-informations {
-    padding: 40px 0;
+    padding: 40px 0 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
