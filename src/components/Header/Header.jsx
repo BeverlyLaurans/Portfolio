@@ -1,5 +1,5 @@
 import Logo from "../../assets/logo/logo-BL.svg"
-import "../../styles/Header.css";
+import "../../styles/scss/Header.scss";
 
 function Header() {
     return (
@@ -12,6 +12,7 @@ function Header() {
                 <ul>
                     <li><a href="#">À propos</a></li>
                     <li><a href="#">Mes projets</a></li>
+                    <li><a href="#">Mes compétences</a></li>
                 </ul>
             </nav>
             <a href="#"><button>Mon CV</button></a>

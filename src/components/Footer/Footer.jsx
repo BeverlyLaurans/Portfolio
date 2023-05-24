@@ -1,5 +1,6 @@
-import linkedinIcon from "../../assets/icons/linkedin-icon.svg"
-import "../../styles/Footer.css";
+import linkedinIcon from "../../assets/icons/social/linkedin-icon.png"
+import githubIcon from "../../assets/icons/social/github-icon.png"
+import "../../styles/scss/Footer.scss";
 
 function Footer() {
     return (
@@ -14,7 +15,8 @@ function Footer() {
                 </ul>
             </div>
             <div className="social-links">
-                <a href="https://fr.linkedin.com/in/beverlylaurans"><img src={linkedinIcon} alt="Icône LinkedIn"></img></a>
+              <a href="https://github.com/BeverlyLaurans"><img src={githubIcon} alt="Icône GitHub"></img></a>
+              <a href="https://fr.linkedin.com/in/beverlylaurans"><img src={linkedinIcon} alt="Icône LinkedIn"></img></a>
             </div>
         </div>
       </footer>

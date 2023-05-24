@@ -1,0 +1,32 @@
+.skills {
+    margin-bottom: 120px;
+}
+
+.skills__heading {
+    margin-bottom: 40px;
+}
+
+.skills__heading h2 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.skills__heading p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills h4, .skills p {
+    padding: 0;
+    margin: 0;
+}

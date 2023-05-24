@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Error from "./components/Error/Error";
 import Footer from "./components/Footer/Footer";
-import "./styles/index.css";
+import "./styles/css/prefixed/style.css";
 
 export default function App() {
   return (

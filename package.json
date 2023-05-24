@@ -10,13 +10,16 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "sass": "^1.62.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass": "sass --watch ./src/styles/scss/main.scss:./src/styles/css/style.css --style compressed",
+    "prefix": "postcss ./src/styles/css/style.css --use autoprefixer -d ./src/styles/css/prefixed/"
   },
   "eslintConfig": {
     "extends": [

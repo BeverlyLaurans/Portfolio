@@ -6,7 +6,15 @@ export const projectsDatas = [
 		"languages": [
 			"HTML",
 			"CSS"
-        ]
+        ],
+		"main tools / tags": [
+			"HTML",
+			"CSS"
+		],
+		"all-tools": [
+			"HTML",
+			"CSS"
+		]
 	},
 	{
 		"title": "",

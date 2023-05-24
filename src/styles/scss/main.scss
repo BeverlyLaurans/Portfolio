@@ -6,3 +6,12 @@ body {
     margin: 0;
     padding: 35px 130px;
 }
+
+@import "./Header";
+@import "./Introduction";
+@import "./ProjectList";
+@import "./Pagination";
+@import "./Skills";
+@import "./ContactForm";
+@import "./Footer";
+@import "./Error";
