@@ -7,14 +7,17 @@ import nodeIcon from "../../assets/icons/tools/nodejs-icon.png"
 import sassIcon from "../../assets/icons/tools/sass-icon.png"
 import mongoDBIcon from "../../assets/icons/tools/mongoDB-icon.png"
 import githubIcon from "../../assets/icons/social/github-icon.png"
-import "../../styles/scss/Introduction.scss";
+import "../../styles/scss/components/Introduction.scss";
 
 function Introduction() {
     return (
       <section className="about">
         <section className="introduction-container">
           <h1>Hello !<br />Moi c'est Beverly, développeuse web.</h1>
-          <p>Issue d'un parcours webmarketing, et ayant toujours travaillé auprès de développeurs web, j'ai finalement décidé de me lancer ! N'hésitez pas à faire un tour sur <a href="#"><b>mes projets</b></a>, mon <a href="https://github.com/BeverlyLaurans?tab=repositories">profil GitHub</a>, mon <a href="#">CV</a> ou encore mon <a href="https://fr.linkedin.com/in/beverlylaurans">profil LinkedIn</a> afin d'en savoir plus !</p>
+          {/* <div> */}
+            <p>Issue d'un parcours webmarketing, et ayant toujours travaillé auprès de développeurs web, j'ai finalement décidé de me lancer ! N'hésitez pas à faire un tour sur <a href="#"><b>mes projets</b></a>, mon <a href="https://github.com/BeverlyLaurans?tab=repositories">profil GitHub</a>, mon <a href="#">CV</a> ou encore mon <a href="https://fr.linkedin.com/in/beverlylaurans">profil LinkedIn</a> afin d'en savoir plus !</p>
+            {/* <p id="read-more"> En savoir plus</p> */}
+          {/* </div> */}
           <ul>
             <li><img src={html5Icon} alt="Icône HTML5"></img></li>
             <li><img src={css3Icon} alt="Icône CSS3"></img></li>

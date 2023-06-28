@@ -1,6 +1,6 @@
 import linkedinIcon from "../../assets/icons/social/linkedin-icon.png"
 import githubIcon from "../../assets/icons/social/github-icon.png"
-import "../../styles/scss/Footer.scss";
+import "../../styles/scss/layouts/Footer.scss";
 
 function Footer() {
     return (
@@ -8,7 +8,7 @@ function Footer() {
         <hr></hr>
         <div className="footer-informations">
             <div className="footer-links">
-                <p>©2022, All right reserved.</p>
+                <p>©2023, All right reserved.</p>
                 <ul>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="#">Cookies et confidentialité</a></li>

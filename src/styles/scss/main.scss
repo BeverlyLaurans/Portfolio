@@ -7,11 +7,16 @@ body {
     padding: 35px 130px;
 }
 
-@import "./Header";
-@import "./Introduction";
-@import "./ProjectList";
-@import "./Pagination";
-@import "./Skills";
-@import "./ContactForm";
-@import "./Footer";
-@import "./Error";
+// @import "./utils/variables";
+@import "./layouts/Header";
+@import "./components/Introduction";
+@import "./components/ProjectList";
+@import "./components/Pagination";
+@import "./components/Skills";
+@import "./components/Slideshow";
+@import "./components/Modal";
+@import "./components/Accordion";
+@import "./components/ContactForm";
+@import "./layouts/Footer";
+@import "./pages/Project.scss";
+@import "./components/Error";

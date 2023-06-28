@@ -1,0 +1,35 @@
+.project a {
+    text-decoration: none;
+}
+
+.project h1 {
+    text-align: center;
+}
+
+.project h2 {
+    font-size: 22px;
+}
+
+.go-back {
+    color: #1C3B58;
+    margin: 20px 0;
+}
+
+.project__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+    a {
+       text-decoration: none; 
+       color: white;
+       background-color: #6FC0CB;
+       border-radius: 6px;
+       padding: 5px 10px;
+    }
+}
+
+.project__links a:hover {
+    color: #1C3B58;
+}

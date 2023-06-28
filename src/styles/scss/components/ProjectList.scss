@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .projects {
     margin: 120px 0 80px 0;
 }
@@ -7,6 +9,11 @@
     padding: 0;
     font-size: 40px;
     font-weight: 600;
+}
+
+.projects a {
+    text-decoration: none;
+    color: $main-color;
 }
 
 .projects-global-information {
@@ -31,7 +38,7 @@
     border: none;
     border-radius: 6px;
     /* background-color: transparent; */
-    background-color: #6FC0CB;
+    background-color: $secondary-color;
     /* background-color: #F5FBF9; */
     /* background-color: #1C3B58; */
     font-size: 16px;
@@ -39,7 +46,7 @@
     margin: 0;
     padding: 3px 8px;
     /* color:#1C3B58; */
-    color: #FFFFFF;
+    color: $white;
     cursor: pointer;
 }
 
@@ -73,13 +80,14 @@
 
 .project-card-picture {
     height: 50%;
-    background-color: #6FC0CB;
-    border-radius: 7px 7px 0 0;
-}
-
-.project-card-picture {
     border-radius: 7px 7px 0 0;
     object-fit: cover;
+}
+
+.project-card-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px 7px 0 0;
 }
 
 .project-card-details {
@@ -91,7 +99,7 @@
 }
 
 .project-card-details h3 {
-    color: #6FC0CB;
+    color: $secondary-color;
     margin: 0 0 10px 0;
     padding: 0;
     font-size: 18px;
@@ -120,8 +128,17 @@
     height: 25px;
 }
 
-.tag {
-    border: 1px solid #1C3B58;
+.tags-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 6px;
+}
+
+.tag-item {
+    border: 1px solid $main-color;
     padding: 5px 8px;
     font-size: 10px;
     font-weight: 300;
