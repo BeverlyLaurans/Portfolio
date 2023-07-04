@@ -32,31 +32,30 @@ export const projectsDatas = [
 		"id": "portfolio",
 		"title": "Mon portfolio 💻",
 		"info": "Création de mon site (oui celui-ci !) avec React.",
-		"cover": "/images/portfolio/portfolio.png",
+		"cover": "/images/portfolio/portfolio-cover.png",
 		"tags": [
 			"React",
 			"Sass"
         ],
 		"pictures": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"images/portfolio/portfolio1.png",
+			"images/portfolio/portfolio2.png",
+			"images/portfolio/portfolio3.png"
 		],
-		"projectUrl": "/",
+		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio",
 		"description": "Ma vitrine sur le web.",
 		"goals": [ 
-			"",
+			"Créer mon site et montrer mes compétences à travers celui-ci et mes différents projets.",
 		],
 		"technologies": [
-			"",
-			""
+			"React",
+			"Create React App",
+			"Sass",
+			"Autoprefixer"
 		],
 		"tools": [
-			"",
-			""
+			
 		],
 		"tasks": [
 			"",
@@ -74,29 +73,40 @@ export const projectsDatas = [
 			"MongoDB"
         ],
 		"pictures": [
-			"",
-			"",
-			"",
-			"",
-			""
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire1.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire2.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire3.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire4.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire5.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire6.png",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire7.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Mon-Vieux-Grimoire-P7-OCR/tree/main/backend",
-		"description": "",
+		"description": "Mon Vieux Grimoire est un site de référencement et de notation de livres.",
 		"goals": [ 
-			"",
+			"Développement du back-end : mise en place du serveur et de l'API",
 		],
 		"technologies": [
-			"",
-			""
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"Multer",
+			"Sharp",
+			"Helmet",
+			"Express-mongo-sanitize"
 		],
 		"tools": [
-			"",
-			""
+			"Figma",
+			"Postman",
+			"Chrome DevTools"
 		],
 		"tasks": [
-			"",
-			""
+			"Mise en route du serveur avec Express.js",
+			"Mise en place de l'application et connexion à la base de données",
+			"Création des routes en suivant les spécifications techniques",
+			"Gestion des controllers et des middlewares : authentification, fichiers image...",
+			"Sécurisation minimale de l'app : gestion des champs du formulaire d'inscription / connexion, mail unique, protection contre les injections de données, gestion des en-têtes HTTP..."
 		]
 	},
 	{
@@ -106,33 +116,43 @@ export const projectsDatas = [
 		"cover": "/images/kasa/kasa-cover.png",
 		"tags": [
 			"React",
-			"Sass"
+			"Sass",
+			"Autoprefixer"
         ],
 		"pictures": [
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"/images/kasa/kasa-desktop1.png",
+			"/images/kasa/kasa-desktop2.png",
+			"/images/kasa/kasa-desktop3.png",
+			"/images/kasa/kasa-desktop4.png",
+			"/images/kasa/kasa-mobile1.png",
+			"/images/kasa/kasa-mobile2.png",
+			"/images/kasa/kasa-mobile3.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Kasa-P6-OCR",
-		"description": "",
+		"description": "Kasa est un site de location d'appartements entre particuliers.",
 		"goals": [ 
-			"",
+			"Développer l'application avec React en suivant les guidelines et en respectant les contraintes techniques",
+			"Utiliser Sass",
+			"Réaliser une animation CSS"
 		],
 		"technologies": [
-			"",
-			""
+			"React",
+			"Sass"
 		],
 		"tools": [
-			"",
-			""
+			"Create React App",
+			"Figma"
 		],
 		"tasks": [
-			"",
-			""
+			"Mise en place du projet avec Create React App",
+			"Découpage du projet et liste des différents composants et pages",
+			"Mise en place du routeur et de la navigation entre les différentes pages avec React Router",
+			"Gestion des erreurs et des paramètres dans l'URL",
+			"Utilisation de Sass et structuration des fichiers Scss",
+			"Création et gestion des composants, ainsi que des pages",
+			"Gestion de l'animation des menus accordéons",
+			"Gestion des carrousels affichant les photos des logements"
 		]
 	},
 	{
@@ -146,28 +166,48 @@ export const projectsDatas = [
 			"CSS"
         ],
 		"pictures": [
-			"",
-			"",
-			"",
-			""
+			"/images/nina-carducci/nina-carducci1.png",
+			"/images/nina-carducci/nina-carducci2.png",
+			"/images/nina-carducci/nina-carducci3.png",
+			"/images/nina-carducci/nina-carducci4.png",
+			"/images/nina-carducci/nina-carducci5.png",
+			"/images/nina-carducci/nina-carducci6.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Nina-Carducci-P5-OCR",
-		"description": "",
+		"document": "/documents/Rapport_intervention_Nina_Carducci_Beverly_Laurans.pdf",
+		"description": "Site vitrine de la photographe Nina Carducci.",
 		"goals": [ 
-			"",
+			"Optimiser les performances, le SEO technique et l'accessibilité",
+			"Corriger les problèmes fonctionnels"
 		],
 		"technologies": [
-			"",
-			""
+			"JavaScript",
+			"CSS",
+			"HTML"
 		],
 		"tools": [
-			"",
-			""
+			"Chrome DevTools",
+			"Google LightHouse",
+			"Wave (accessibilité)",
+			"GTmetrix",
+			"SEOquake",
+			"Google Rich Results",
+			"Schema.org Validator"
 		],
 		"tasks": [
-			"",
-			""
+			"Audit global du site",
+			"Optimisation des images du site : réduction de taille, compression et conversion en webP",
+			"Optimisation de la structure et de la sémantique (balises) du code",
+			"Mise en place du référencement local : coordonnées, micro-données avec schema.org, données structurées",
+			"Ajout des balises méta titre et description",
+			"Ajout des métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards)",
+			"Optimisation de l'accessibilité : ajustement du contrastre de couleur, navigation au clavier, descriptions alternatives, ajout de la langue...",
+			"Autres optimisations SEO technique on-page : titre de la page, nom des fichiers, structuration des contenus et des titres",
+			"Correction technique pour visionner la catégorie sélectionnée filtrant les photos",
+			"Correction technique pour naviguer entre les différentes photos de la galerie dans la modale",
+			"Autres optimisations des performances du site : réduction / nettoyage de certains fichiers (Bootstrap), minification, import de la police via le CSS, report du chargement de certains fichiers...", 
+			"Liste d'optimisations et d'actions supplémentaires à réaliser pour aller beaucoup plus loin"
 		]
 	},
 	{
@@ -181,16 +221,20 @@ export const projectsDatas = [
 			"CSS",
         ],
 		"pictures": [
-			"",
-			"",
-			"",
-			"",
-			"",
-			""
+			"/images/sophie-bluel/sophie-bluel1.png",
+			"/images/sophie-bluel/sophie-bluel2.png",
+			"/images/sophie-bluel/sophie-bluel3.png",
+			"/images/sophie-bluel/sophie-bluel4.png",
+			"/images/sophie-bluel/sophie-bluel5.png",
+			"/images/sophie-bluel/sophie-bluel6.png",
+			"/images/sophie-bluel/sophie-bluel7.png",
+			"/images/sophie-bluel/sophie-bluel8.png",
+			"/images/sophie-bluel/sophie-bluel9.png",
+			"/images/sophie-bluel/sophie-bluel10.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio-Sophie-Bluel-P3-OCR/tree/master/FrontEnd",
-		"description": "Sophie Bluel est le portfolio d'une architecte d'intérieur.",
+		"description": "Portfolio de l'architecte d'intérieur Sophie Bluel.",
 		"goals": [ 
 			"Rendre le site dynamique en récupérant et en envoyant des données via l'API.",
 		],
@@ -208,6 +252,7 @@ export const projectsDatas = [
 			"Récupération et affichage des travaux sur la page d'accueil",
 			"Filtrage des travaux par catégorie",
 			"Création de la page de connexion",
+			"Gestion de formulaire et des erreurs",
 			"Gestion de la connexion", 
 			"Gestion de l'authentification avec JSON Web Token",
 			"Création de la modale de gestion des travaux",
@@ -224,9 +269,13 @@ export const projectsDatas = [
 			"CSS"
         ],
 		"pictures": [
-			"",
-			"",
-			""
+			"/images/booki/booki-desktop1.png",
+			"/images/booki/booki-desktop2.png",
+			"/images/booki/booki-desktop3.png",
+			"/images/booki/booki-mobile1.png",
+			"/images/booki/booki-mobile2.png",
+			"/images/booki/booki-mobile3.png",
+			"/images/booki/booki-mobile4.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Booki-P2-OCR",
