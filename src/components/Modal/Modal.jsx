@@ -1,16 +1,23 @@
-import Slideshow from "../Slideshow/Slideshow"
+import { useState } from "react";
 import "../../styles/scss/components/Modal.scss";
 
-function Modal() {
+function Modal(props) {
+    const {modalTitle, modalDetails, onClose} = props;
+    const [ isModalClose, setIsModalClose ] = useState(false);
+
+    const handleModalClick = (event) => {
+        event.stopPropagation();
+      };
+
     return (
-        <div className="modal-overlay">
-            <div className="modal">
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal" onClick={handleModalClick}>
                 <div className="modal__title">
-                    <strong>Titre de la modale</strong>
-                    <img></img>
+                    <strong>{modalTitle}</strong>
+                    <button onClick={onClose}>X</button>
                 </div>
                 <div className="modal__details">
-                    
+                    {modalDetails}
                 </div>
             </div>
         </div>

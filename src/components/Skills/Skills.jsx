@@ -1,87 +1,80 @@
+import { useState } from "react";
+import { skillsDatas } from "../../datas/skills";
 import Accordion from "../Accordion/Accordion";
 import "../../styles/scss/components/Skills.scss";
 
 function Skills() {
+    const [activeAccordion, setActiveAccordion] = useState(0);
+
+    const handleAccordionClick = (index) => {
+        setActiveAccordion(index === activeAccordion ? null : index);
+    };
+
     return (
-        <section className="skills">
+        <section className="skills" id="skills-section">
             <div className="skills__heading">
                 <h2>Mes compétences</h2>
                 <p>Mon profil s'axe autour du webmarketing et du développement web. Je vous propose de faire un tour d'horizon sur mes principales compétences, et celles que je prévois d'acquérir prochainement !</p>
             </div>
-            <div className="skills__list">
-                <Accordion />
-                <div className="development-skills">
-                    <h3>Développement web</h3>
-                    <div className="development-skills__list">   
-                        <div className="technologies">
-                            <h4>Langages & technologies</h4>
-                            <p>HTML</p>
-                            <p>CSS / SCSS</p>
-                            <p>JavaScript</p>
-                            <p>React</p>
-                            <p>Node.js</p>
-                            <p>MongoDB</p>
-                            <p>Sass</p>
+            <Accordion 
+                accordionTitle="Développement web"
+                isActive={activeAccordion === 0}
+                onAccordionClick={() => handleAccordionClick(0)}
+                accordionDetails={
+                    <div className="skills__list">
+                        <div className="skills__list-category">
+                            <h4>Langages & technologies :</h4>
+                            <ul>
+                                {skillsDatas[0]["languages-&-technologies"].map((technology) => (
+                                <li key={technology}>{technology}</li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="tools">
-                            <h4>Outils</h4>
-                            <p>Visual Studio Code</p>
-                            <p>Chrome DevTools</p>
-                            <p>Figma</p>
-                            {/* <p>Jira</p>
-                            <p>Postman / Swagger</p> */}
-                            <p>Git / GitHub</p>
-                            <p>LightHouse</p>
+                        <div className="skills__list-category">
+                            <h4>Outils :</h4>
+                            <ul>
+                                {skillsDatas[0]["tools"].map((tool) => (
+                                <li key={tool}>{tool}</li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="learning-skills">
-                            <h4>En cours d'apprentissage</h4>
-                            <p>React Native</p>
+                        <div className="skills__list-category">
+                            <h4>En cours d'apprentissage :</h4>
+                            <ul>
+                                {skillsDatas[0]["learning-skills"].map((learningSkill) => (
+                                <li key={learningSkill}>{learningSkill}</li>
+                                ))}
+                            </ul>
                         </div>
-                        {/* <div className="upcoming-skills">
-                            <h4>Prochainement...</h4>
-                            <p>React Native</p>
-                        </div> */}
                     </div>
-                </div>
+                }
+                />
                 <br/>
-                <Accordion />
-                <div className="webmarketing-skills">
-                    <h3>Webmarketing & e-commerce</h3>
-                    <div className="webmarketing-skills__list">
-                        <div className="skills">
-                            <h4>Compétences</h4>
-                            <p>Gestion du trafic</p>
-                            <p>Référencement naturel</p>
-                            <p>Référencement payant</p>
-                            <p>Social ads</p>
-                            <p>Emailing</p>
-                            <p>Marketing automation</p>
-                            <p>Gestion de contenu</p>
-                            <p>Tracking</p>
-                            <p>Analytics</p>
-                            <p>Optimisation globale d'un site</p>
-                            <p>Optimisation du taux de conversion</p>
-                            <p>Image de marque</p>
-                            <p>Gestion des avis client</p>
-                            <p>Gestion de l'é-réputation</p>
-                            <p>Présence en ligne et visibilité</p>
-                            <p>RGPD</p>
+                <Accordion 
+                accordionTitle="Webmarketing & e-commerce"
+                isActive={activeAccordion === 1}
+                onAccordionClick={() => handleAccordionClick(1)}
+                accordionDetails={
+                    <div className="skills__list">
+                        <div className="skills__list-category">
+                            <h4>Compétences :</h4>
+                            <ul>
+                                {skillsDatas[1]["skills"].map((skill) => (
+                                <li key={skill}>{skill}</li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="tools">
-                            <h4>Outils</h4>
-                            <p>Google Analytics</p>
-                            <p>Google Tag Manager</p>
-                            <p>Google Ads</p>
-                            <p>SEMrush</p>
-                            <p>Google</p>
-                            <p>Prestashop</p>
-                            <p>WordPress</p>
-                            <p>TextOptimizer</p>
-                            <p>Web Developper extension</p>
+                        <div className="skills__list-category">
+                            <h4>Outils :</h4>
+                            <ul>
+                                {skillsDatas[1]["tools"].map((tool) => (
+                                <li key={tool}>{tool}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                }
+                />
         </section>
     )
   }

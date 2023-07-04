@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import previousArrow from "../../assets/icons/arrows/previous-arrow.svg";
 import nextArrow from "../../assets/icons/arrows/next-arrow.svg";
 import "../../styles/scss/components/Slideshow.scss";
 
 function Slideshow(props) {
-    const {imgSrc, imgAlt} = props;
+  const {imgSrc, imgAlt} = props;
   const [imageIndex, setImageIndex] = useState(0);
+  const [activeCircleIndex, setActiveCircleIndex] = useState(0);
+
+  useEffect(() => {
+    setActiveCircleIndex(imageIndex);
+  }, [imageIndex]);
     
   function nextPicture() {
     if (imageIndex === imgSrc.length - 1) {
@@ -40,8 +45,17 @@ function Slideshow(props) {
                   <button onClick={nextPicture}><img src={nextArrow} alt="Next arrow"/></button>
               </div>
             </div>
-            <div className="slideshow__counter">
-                <p>{imageIndex + 1}/{imgSrc.length}</p>
+            <div className="slideshow__pagination">
+                {/* <p>{imageIndex + 1}/{imgSrc.length}</p> */}
+                {imgSrc.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`slideshow__circle ${
+                      index === activeCircleIndex ? "active" : ""
+                    }`}
+                    onClick={() => setImageIndex(index)}
+                  ></div>
+                ))}
             </div>
         </div>
     )

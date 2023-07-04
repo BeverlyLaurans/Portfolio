@@ -1,19 +1,26 @@
+import whiteArrow from "../../assets/icons/arrows/white-arrow.svg";
 import "../../styles/scss/components/Accordion.scss";
 
 function Accordion(props) {
-    // const {accordionTitle, accordionDetails} = props;
+    const {accordionTitle, accordionDetails, isActive, onAccordionClick} = props;
 
     return (
-        <div className="accordion">
-            <div className="accordion__title">
-                <h4></h4>
-                <img></img>
-            </div>
-            <div className="accordion__details">
-                <h3></h3>
-                <p></p>
-            </div>
+    <div className="accordion">
+        <button
+            className={`accordion__title ${isActive ? "active" : ""}`}
+            onClick={onAccordionClick}
+        >
+            <h3>{accordionTitle}</h3>
+            <img
+            className={`${isActive ? "active" : ""}`}
+            src={whiteArrow}
+            alt="white arrow"
+            />
+        </button>
+        <div className={`accordion__details ${isActive ? "active" : ""}`}>
+            {accordionDetails}
         </div>
+    </div>
     )
 }
 

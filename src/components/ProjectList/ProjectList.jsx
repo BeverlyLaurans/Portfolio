@@ -5,7 +5,7 @@ import "../../styles/scss/components/ProjectList.scss";
 
 function ProjectList() {
     return (
-      <section className="projects">
+      <section className="projects" id="projects-section">
         <div className="projects-global-information">
           <div className="projects-title">
             <h2>Mes projets</h2>

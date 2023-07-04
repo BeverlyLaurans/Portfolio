@@ -11,7 +11,7 @@ import "../../styles/scss/components/Introduction.scss";
 
 function Introduction() {
     return (
-      <section className="about">
+      <section className="about" id="about-section">
         <section className="introduction-container">
           <h1>Hello !<br />Moi c'est Beverly, développeuse web.</h1>
           {/* <div> */}
@@ -24,8 +24,6 @@ function Introduction() {
             <li><img src={javascriptIcon} alt="Icône JavaScript"></img></li>
             <li><img src={reactIcon} alt="Icône React.js"></img></li>
             <li><img src={nodeIcon} alt="Icône Node.js"></img></li>
-            {/* <li><img src={sassIcon} alt="Icône Sass"></img></li> */}
-            {/* <li><img src={mongoDBIcon} alt="Icône MongoDB"></img></li> */}
             <li><a href="https://github.com/BeverlyLaurans?tab=repositories"><img src={githubIcon} alt="Icône GitHub"></img></a></li>
           </ul>
         </section>
