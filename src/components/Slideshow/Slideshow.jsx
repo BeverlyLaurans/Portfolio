@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import previousArrow from "../../assets/icons/arrows/previous-arrow.svg";
-import nextArrow from "../../assets/icons/arrows/next-arrow.svg";
+import previousArrow from "../../assets/icons/interactions/previous-arrow.svg";
+import nextArrow from "../../assets/icons/interactions/next-arrow.svg";
 import "../../styles/scss/components/Slideshow.scss";
 
 function Slideshow(props) {
