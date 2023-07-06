@@ -4,20 +4,15 @@ import css3Icon from "../../assets/icons/tools/css3-icon.png"
 import javascriptIcon from "../../assets/icons/tools/javascript-icon.png"
 import reactIcon from "../../assets/icons/tools/react-icon.png"
 import nodeIcon from "../../assets/icons/tools/nodejs-icon.png"
-import sassIcon from "../../assets/icons/tools/sass-icon.png"
-import mongoDBIcon from "../../assets/icons/tools/mongoDB-icon.png"
 import githubIcon from "../../assets/icons/social/github-icon.png"
 import "../../styles/scss/components/Introduction.scss";
 
 function Introduction() {
     return (
-      <section className="about" id="about-section">
+      <section className="about" id="a-propos">
         <section className="introduction-container">
           <h1>Hello !<br />Moi c'est Beverly, développeuse web.</h1>
-          {/* <div> */}
-            <p>Issue d'un parcours webmarketing, et ayant toujours travaillé auprès de développeurs web, j'ai finalement décidé de me lancer ! N'hésitez pas à faire un tour sur <a href="#"><b>mes projets</b></a>, mon <a href="https://github.com/BeverlyLaurans?tab=repositories">profil GitHub</a>, mon <a href="#">CV</a> ou encore mon <a href="https://fr.linkedin.com/in/beverlylaurans">profil LinkedIn</a> afin d'en savoir plus !</p>
-            {/* <p id="read-more"> En savoir plus</p> */}
-          {/* </div> */}
+            <p>Issue d'un parcours webmarketing, et ayant toujours travaillé auprès de développeurs web, j'ai finalement décidé de me lancer avec la formation OpenClassrooms ! N'hésitez pas à faire un tour sur <a href="/#projets"><b>mes projets</b></a>, mon <a href="https://github.com/BeverlyLaurans?tab=repositories">profil GitHub</a>, mon <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank">CV</a> ou encore mon <a href="https://fr.linkedin.com/in/beverlylaurans">profil LinkedIn</a> afin d'en savoir plus !</p>
           <ul>
             <li><img src={html5Icon} alt="Icône HTML5"></img></li>
             <li><img src={css3Icon} alt="Icône CSS3"></img></li>
@@ -30,12 +25,7 @@ function Introduction() {
         <section className="photo-container">
           <div>
             <div>
-              <img src={Avatar} alt=""></img>
-            </div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <img src={Avatar} alt="Photo de Beverly"></img>
             </div>
           </div>
         </section>

@@ -11,7 +11,7 @@ function Skills() {
     };
 
     return (
-        <section className="skills" id="skills-section">
+        <section className="skills" id="competences">
             <div className="skills__heading">
                 <h2>Mes compétences</h2>
                 <p>Mon profil s'axe autour du webmarketing et du développement web. Je vous propose de faire un tour d'horizon sur mes principales compétences, et celles que je prévois d'acquérir prochainement !</p>

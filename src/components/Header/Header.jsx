@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 import Logo from "../../assets/logo/logo-BL.svg";
 import lightBlueLogo from "../../assets/logo/logo-BL-lightblue.svg";
@@ -23,9 +22,9 @@ function Header() {
         <div className="nav-container">
             <nav>
                 <ul>
-                  <li><a href="#about-section">À propos</a></li>
-                  <li><a href="#projects-section">Mes projets</a></li>
-                  <li><a href="#skills-section">Mes compétences</a></li>
+                  <li><a href="/#a-propos">À propos</a></li>
+                  <li><a href="/#projets">Mes projets</a></li>
+                  <li><a href="/#competences">Mes compétences</a></li>
                 </ul>
             </nav>
             <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank"><button>Mon CV</button></a>

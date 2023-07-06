@@ -27,7 +27,6 @@ function Project() {
             imgAlt={project.title}
             />
             <div className="project__links">
-                {/* <a href={project.projectUrl}>Voir le projet</a> */}
                 {project.projectUrl && (
                 <a href={project.projectUrl} target="_blank">Voir le projet</a>
             )}
@@ -66,7 +65,6 @@ function Project() {
                 <a href={project.document} target="_blank">Voir le rapport d'intervention</a>
             </div>
             )}
-            {/* <div className="project__link-bonus"><a>{project.document}</a></div> */}
         </div>
         )
 

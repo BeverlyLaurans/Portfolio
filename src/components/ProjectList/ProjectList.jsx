@@ -1,22 +1,64 @@
 import { projectsDatas } from "../../datas/projects";
 import { Link } from "react-router-dom";
-// import Pagination from "./Pagination";
+import { useState, useEffect } from "react";
 import "../../styles/scss/components/ProjectList.scss";
 
 function ProjectList() {
+
+  const [selectedTag, setSelectedTag] = useState("Tous");
+  const [filteredProjects, setFilteredProjects] = useState(projectsDatas);
+  const allTags = new Set(['Tous', ...projectsDatas.flatMap((project) => project.tags)]);
+
+  useEffect(() => {
+    if (selectedTag === 'Tous') {
+      setFilteredProjects(projectsDatas);
+    } else {
+      setFilteredProjects(
+        projectsDatas.filter((project) => project.tags.includes(selectedTag))
+      );
+    }
+  }, [selectedTag]);
+
     return (
-      <section className="projects" id="projects-section">
+      <section className="projects" id="projets">
         <div className="projects-global-information">
-          <div className="projects-title">
-            <h2>Mes projets</h2>
+          <div className="projects-introduction">
+            <div className="projects-title">
+              <h2>Mes projets</h2>
+            </div>
           </div>
           <div className="projects-description">
             <p>Il s'agit des principaux projets que j'ai réalisés, pour le moment tous issus de la formation Développeur.euse web d'OpenClassrooms. N'hésitez pas à cliquez sur l'un d'entre eux pour avoir davantage d'informations.</p>
-            {/* <button className="filter">Filtrer</button> */}
           </div>
         </div>
+        <div className="tag-list-wrapper">
+          <ul>
+          <li
+            className={`tag-item ${selectedTag === 'Tous' ? 'active' : ''}`}
+            onClick={() => {
+              setSelectedTag('Tous');
+              setFilteredProjects(projectsDatas);
+            }}>
+          Tous
+          </li>
+            {Array.from(allTags)
+              .filter((tag) => tag !== 'Tous')
+              .sort((a, b) => a < b ? -1 : 1)
+              .map((tag) => (
+                <li key={tag} className={`tag-item ${tag === selectedTag ? 'active' : ''}`}
+                onClick={() => {
+                  setSelectedTag(tag);
+                  setFilteredProjects(
+                    projectsDatas.filter((project) => project.tags.includes(tag))
+                  );
+                }}>
+                  {tag}
+                </li>
+              ))}
+          </ul>
+      </div>
         <div className="projects-wrapper">
-          {projectsDatas.map((project) => (
+          {filteredProjects.map((project) => (
           <Link to={`/projets/${project.id}`} key={project.id}>
             <div className="project-card">
               <div className="project-card-picture">

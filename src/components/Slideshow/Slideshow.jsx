@@ -41,12 +41,11 @@ function Slideshow(props) {
             <img src={imgSrc[imageIndex]} alt={imgAlt}/>
             <div className="slideshow__informations">
               <div className="slideshow__navigation">
-                  <button onClick={previousPicture}><img src={previousArrow} alt="Previous arrow"/></button>
-                  <button onClick={nextPicture}><img src={nextArrow} alt="Next arrow"/></button>
+                  <button onClick={previousPicture}><img src={previousArrow} alt="Flèche précédent"/></button>
+                  <button onClick={nextPicture}><img src={nextArrow} alt="Flèche suivant"/></button>
               </div>
             </div>
             <div className="slideshow__pagination">
-                {/* <p>{imageIndex + 1}/{imgSrc.length}</p> */}
                 {imgSrc.map((image, index) => (
                   <div
                     key={index}

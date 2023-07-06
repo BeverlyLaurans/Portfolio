@@ -19,6 +19,9 @@ export const skillsDatas = [
         ],
         "learning-skills": [
             "React Native"
+        ],
+        "upcoming-skills": [
+            ""
         ]
 	},
     {

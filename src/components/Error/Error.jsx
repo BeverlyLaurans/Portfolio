@@ -7,7 +7,7 @@ function Error() {
       <div className="error">
         <div className="error-404">
           <p>4</p>
-          <img src={Avatar} alt=""></img>
+          <img src={Avatar} alt="Photo de Beverly"></img>
           <p>4</p>
         </div>
         <div className="error-informations">

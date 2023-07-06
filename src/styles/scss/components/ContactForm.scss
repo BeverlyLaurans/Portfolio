@@ -1,9 +1,6 @@
-.contact {
-    
-}
-
 .contact-container {
-    padding : 75px 200px;
+    // padding : 75px 200px;
+    padding: 10% 20%;
     background-color: #1C3B58;
     color: #FFFFFF;
     border-radius: 30px;
@@ -11,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 270px;
 }
 
 .contact-wrapper {
@@ -19,6 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    width: 100%;
 }
 
 .contact-wrapper h2 {
@@ -37,7 +36,7 @@
     padding: 0;
 }
 
-.contact-wrapper button {
+.contact-wrapper .contact-btn {
     background-color: #6FC0CB;
     padding: 12px 24px;
     font-size: 16px;
@@ -49,7 +48,83 @@
     border: none;
 }
 
-.contact-wrapper button:hover {
+.contact-wrapper .contact-btn:hover {
     color: #6FC0CB;
     background-color: #FFFFFF;
 }
+
+// form {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 15px;
+//     width: 100%;
+//     .submit-btn button {
+//         background-color: #6FC0CB;
+//         padding: 12px 24px;
+//         font-size: 16px;
+//         font-weight: 500;
+//         margin: 0;
+//         cursor: pointer;
+//         border-radius: 6px;
+//         color: #FFFFFF;
+//         border: none;
+//         &:hover {
+//             color: #6FC0CB;
+//             background-color: #FFFFFF;
+//         }
+//     }
+//     label {
+//         font-size: 16px;
+//         font-weight: 400;
+//     }
+//     .text input {
+//         height: 20px;
+//     }
+//     .textarea input {
+//         height: 100px;
+//     }
+//     .form-field {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         gap: 5px;
+//         width: 100%;
+//     }
+//     .submit-btn {
+//         display: flex;
+//         flex-direction: row;
+//         width: 100%;
+//         justify-content: center;
+//         margin-top: 20px;
+//     }
+// }
+
+.contact-wrapper .go-back {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contact-wrapper .go-back button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 14px;
+    &:hover {
+        color: #6FC0CB;
+    }
+}
+
+.contact .social-links {
+    height: 24px;
+    a {
+        height: 100%;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+

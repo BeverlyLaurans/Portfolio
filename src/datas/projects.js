@@ -1,35 +1,6 @@
 export const projectsDatas = [
-	// {
-	// 	"title": "L'app mobile de mon portfolio",
-	// 	"info": "En cours de réalisation...",
-	// 	"cover": "",
-	// 	"tags": [
-	// 		"React Native"
-    //     ],
-	// 	"pictures": [
-		// 	"",
-		// ],
-	// 	"projectUrl": "",
-	// 	"codeUrl": "",
-	// 	"description": "",
-	// 	"goals": [ 
-		// 	"",
-		// ],
-	// 	"technologies": [
-	// 		"",
-	// 		""
-	// 	],
-	// 	"tools": [
-	// 		"",
-	// 		""
-	// 	],
-	// 	"tasks": [
-	// 		"",
-	// 		""
-	// 	]
-	// },
 	{
-		"id": "portfolio",
+		"id": "6",
 		"title": "Mon portfolio 💻",
 		"info": "Création de mon site (oui celui-ci !) avec React.",
 		"cover": "/images/portfolio/portfolio-cover.png",
@@ -63,12 +34,11 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "mon-vieux-grimoire",
+		"id": "5",
 		"title": "Mon Vieux Grimoire",
 		"info": "Mise en place du serveur et de l'API de manière sécurisée.",
 		"cover": "/images/mon-vieux-grimoire/mon-vieux-grimoire-cover.png",
 		"tags": [
-			"Node.js",
 			"Express.js",
 			"MongoDB"
         ],
@@ -110,14 +80,13 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "kasa",
+		"id": "4",
 		"title": "Kasa",
 		"info": "Création d'une application web avec React et utilisation de Sass.",
 		"cover": "/images/kasa/kasa-cover.png",
 		"tags": [
 			"React",
-			"Sass",
-			"Autoprefixer"
+			"Sass"
         ],
 		"pictures": [
 			"/images/kasa/kasa-desktop1.png",
@@ -138,7 +107,8 @@ export const projectsDatas = [
 		],
 		"technologies": [
 			"React",
-			"Sass"
+			"Sass",
+			"Autoprefixer"
 		],
 		"tools": [
 			"Create React App",
@@ -156,7 +126,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "nina-carducci",
+		"id": "3",
 		"title": "Nina Carducci",
 		"info": "Optimisation des performances, du SEO, de l'accessibilité, et corrections fonctionnelles.",
 		"cover": "/images/nina-carducci/nina-carducci-cover.png",
@@ -211,7 +181,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "sophie-bluel",
+		"id": "2",
 		"title": "Sophie Bluel",
 		"info": "Affichage et gestion dynamique d'une galerie de photos avec authentification via une API.",
 		"cover": "/images/sophie-bluel/sophie-bluel-cover.png",
@@ -260,7 +230,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "booki",
+		"id": "1",
 		"title": "Booki",
 		"info": "Développement d'une page d'accueil responsive.",
 		"cover": "/images/booki/booki-cover.png",

@@ -2,14 +2,32 @@ import Introduction from "../../components/Introduction/Introduction";
 import ProjectList from "../../components/ProjectList/ProjectList";
 import Skills from "../../components/Skills/Skills";
 import ContactForm from "../../components/ContactForm/ContactForm";
-// import Modal from "../../components/Modal/Modal";
+import { useEffect } from "react";
 
 function Home() {
+
+  useEffect(() => {
+    const scrollIntoView = () => {
+      const section = window.location.hash;
+      
+      if (section) {
+        const sectionElement = document.querySelector(section);
+        
+        if (sectionElement) {
+          sectionElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    };
+    
+    scrollIntoView();
+  }, []);
+
     return (
       <div>
         <Introduction />
         <ProjectList />
-        {/* <Modal /> */}
         <Skills />
         <ContactForm />
       </div>

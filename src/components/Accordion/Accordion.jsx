@@ -1,4 +1,4 @@
-import whiteArrow from "../../assets/icons/arrows/white-arrow.svg";
+import whiteArrow from "../../assets/icons/interactions/white-arrow.svg";
 import "../../styles/scss/components/Accordion.scss";
 
 function Accordion(props) {
@@ -14,7 +14,7 @@ function Accordion(props) {
             <img
             className={`${isActive ? "active" : ""}`}
             src={whiteArrow}
-            alt="white arrow"
+            alt={`${isActive ? "flèche vers le haut" : "flèche vers le bas"}`}
             />
         </button>
         <div className={`accordion__details ${isActive ? "active" : ""}`}>

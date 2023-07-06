@@ -1,16 +1,38 @@
+import { useState } from "react";
+import linkedinIcon from "../../assets/icons/social/linkedin-white-icon.svg";
 import "../../styles/scss/components/ContactForm.scss";
 
 function ContactForm() {
+  const [showForm, setShowForm] = useState(false);
+
     return (
+    
       <section className="contact">
         <div className="contact-container">
+        {!showForm ? (
           <div className="contact-wrapper">
             <h2>Intéressé par mon travail ?<br />Parlons-en !</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>Contactez-moi</button>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button className="contact-btn" onClick={() => setShowForm(true)}>Contactez-moi</button>
           </div>
+        ) : (
+          <div className="contact-wrapper">
+            <div className="go-back">
+            <button onClick={() => setShowForm(false)}>← Retour</button>
+            </div>
+            <div className="social-links">
+              <a href="https://fr.linkedin.com/in/beverlylaurans"><img src={linkedinIcon} alt="Icône LinkedIn"></img></a>
+            </div>
+            <div className="contact-info">
+              <p>beverly.laurans [@] gmail.com</p>
+            </div>
+
+          </div>
+        ) }
         </div>
       </section>
+  
+    
     )
   }
   
