@@ -1,6 +1,6 @@
 export const projectsDatas = [
 	{
-		"id": "6",
+		"id": "2355815",
 		"title": "Mon portfolio 💻",
 		"info": "Création de mon site (oui celui-ci !) avec React.",
 		"cover": "/images/portfolio/portfolio-cover.png",
@@ -9,9 +9,9 @@ export const projectsDatas = [
 			"Sass"
         ],
 		"pictures": [
-			"images/portfolio/portfolio1.png",
-			"images/portfolio/portfolio2.png",
-			"images/portfolio/portfolio3.png"
+			"/images/portfolio/portfolio1.png",
+			"/images/portfolio/portfolio2.png",
+			"/images/portfolio/portfolio3.png"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio",
@@ -26,15 +26,15 @@ export const projectsDatas = [
 			"Autoprefixer"
 		],
 		"tools": [
-			
+			"Create React App",
+			"Chrome DevTools"
 		],
 		"tasks": [
-			"",
 			""
 		]
 	},
 	{
-		"id": "5",
+		"id": "5797026",
 		"title": "Mon Vieux Grimoire",
 		"info": "Mise en place du serveur et de l'API de manière sécurisée.",
 		"cover": "/images/mon-vieux-grimoire/mon-vieux-grimoire-cover.png",
@@ -80,7 +80,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "4",
+		"id": "3423170",
 		"title": "Kasa",
 		"info": "Création d'une application web avec React et utilisation de Sass.",
 		"cover": "/images/kasa/kasa-cover.png",
@@ -126,7 +126,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "3",
+		"id": "4189052",
 		"title": "Nina Carducci",
 		"info": "Optimisation des performances, du SEO, de l'accessibilité, et corrections fonctionnelles.",
 		"cover": "/images/nina-carducci/nina-carducci-cover.png",
@@ -181,7 +181,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "2",
+		"id": "4782165",
 		"title": "Sophie Bluel",
 		"info": "Affichage et gestion dynamique d'une galerie de photos avec authentification via une API.",
 		"cover": "/images/sophie-bluel/sophie-bluel-cover.png",
@@ -230,7 +230,7 @@ export const projectsDatas = [
 		]
 	},
 	{
-		"id": "1",
+		"id": "9738591",
 		"title": "Booki",
 		"info": "Développement d'une page d'accueil responsive.",
 		"cover": "/images/booki/booki-cover.png",
