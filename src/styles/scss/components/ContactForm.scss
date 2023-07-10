@@ -18,96 +18,44 @@
     align-items: center;
     gap: 30px;
     width: 100%;
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-btn {
+        background-color: #6FC0CB;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        cursor: pointer;
+        border-radius: 6px;
+        color: #FFFFFF;
+        border: none;
+        &:hover {
+            color: #6FC0CB;
+            background-color: #FFFFFF;
+        }
+    }
+    .go-back {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }
 
-.contact-wrapper h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.contact-wrapper p {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-wrapper .contact-btn {
-    background-color: #6FC0CB;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-    cursor: pointer;
-    border-radius: 6px;
-    color: #FFFFFF;
-    border: none;
-}
-
-.contact-wrapper .contact-btn:hover {
-    color: #6FC0CB;
-    background-color: #FFFFFF;
-}
-
-// form {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     gap: 15px;
-//     width: 100%;
-//     .submit-btn button {
-//         background-color: #6FC0CB;
-//         padding: 12px 24px;
-//         font-size: 16px;
-//         font-weight: 500;
-//         margin: 0;
-//         cursor: pointer;
-//         border-radius: 6px;
-//         color: #FFFFFF;
-//         border: none;
-//         &:hover {
-//             color: #6FC0CB;
-//             background-color: #FFFFFF;
-//         }
-//     }
-//     label {
-//         font-size: 16px;
-//         font-weight: 400;
-//     }
-//     .text input {
-//         height: 20px;
-//     }
-//     .textarea input {
-//         height: 100px;
-//     }
-//     .form-field {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-//         gap: 5px;
-//         width: 100%;
-//     }
-//     .submit-btn {
-//         display: flex;
-//         flex-direction: row;
-//         width: 100%;
-//         justify-content: center;
-//         margin-top: 20px;
-//     }
-// }
-
-.contact-wrapper .go-back {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.contact-wrapper .go-back button {
+.contact .go-back button {
     background: none;
     color: white;
     border: none;
