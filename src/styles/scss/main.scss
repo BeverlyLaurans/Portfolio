@@ -5,6 +5,12 @@ body {
     color: #1C3B58;
     margin: 0;
     padding: 35px 130px;
+    @media (max-width: 768px) {
+        padding: 30px 60px;
+    }
+    @media (max-width: 480px) {
+        padding: 25px 40px;
+    }
 }
 
 // @import "./utils/variables";

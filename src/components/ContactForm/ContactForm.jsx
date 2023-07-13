@@ -8,7 +8,7 @@ function ContactForm() {
     return (
     
       <section className="contact">
-        <div className="contact-container">
+        <div className="contact__container">
         {!showForm ? (
           <div className="contact-wrapper">
             <h2>Intéressé par mon travail ?<br />Parlons-en !</h2>
@@ -32,7 +32,6 @@ function ContactForm() {
         </div>
       </section>
   
-    
     )
   }
   

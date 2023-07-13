@@ -1,22 +1,34 @@
-.project a {
-    text-decoration: none;
-}
-
-.project h1 {
-    text-align: center;
-}
-
-.project h2 {
-    font-size: 22px;
-}
-
-.project .go-back {
-    color: #1C3B58;
-    margin-top: 20px 0;
-}
-
-.project .go-back:hover {
-    color: #6FC0CB;
+.project {
+    display: flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 22px;
+        @media (max-width: 768px) {
+            font-size: 17px;
+        }
+        @media (max-width: 480px) {
+            font-size: 15px;
+        }
+    }
+    .go-back {
+        color: #1C3B58;
+        margin-top: 20px 0;
+        &:hover {
+            color: #6FC0CB;
+        }
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
 }
 
 .project__links {
@@ -25,20 +37,25 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 50px 0 30px 0;
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
     a {
        text-decoration: none; 
        color: white;
        background-color: #6FC0CB;
        border-radius: 6px;
        padding: 5px 10px;
+       &:hover {
+        color: #1C3B58;
+       }
     }
 }
 
-.project__links a:hover {
-    color: #1C3B58;
-}
-
-.project__link-bonus {
+.project__links-bonus {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,9 +69,31 @@
         &:hover {
             color: #1C3B58;
         }
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
     }
 }
 
-.project__details p {
-    margin: 0;
+.project__details {
+    p {
+        margin: 0;
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+    li {
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
 }

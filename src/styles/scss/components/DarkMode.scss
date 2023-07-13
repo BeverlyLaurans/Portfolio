@@ -1,0 +1,147 @@
+.dark-mode {
+    position: absolute;
+    right: 75px;
+    top: 54px;
+    height: 20px;
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Gestion des couleurs en dark mode
+body {
+    &.dark {
+        // background-color: #161625;
+        background-color: #121212;
+        color: #FFFFFF;
+        nav a {
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .cv-btn {
+            // background-color: color(display-p3 0.75 0.69 1);
+            background-color: #E6DEFF;
+            // color: #FFFFFF;
+            color: #121212;
+            &:hover {
+                color: #4C4C50;
+            }
+        }
+        .introduction-container a {
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .tag-list-wrapper li {
+            border: 1.2px solid #E6DEFF;
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .tag-item.active {
+            background-color: #E6DEFF;
+            color: #121212;
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+        .project-card {
+            background-color: #282828;
+            .tag-item {
+                border: 1px solid #FFFFFF;
+                color: #FFFFFF;
+            }
+        }
+        .project-card-details {
+            h3 {
+                color: #E6DEFF;
+            }
+            p {
+                color: #FFFFFF;
+            }
+        }
+        .accordion {
+            background-color: #282828;
+            h4 {
+                color: #E6DEFF;
+            }
+        }
+        .accordion__title {
+            background-color: #E6DEFF;
+            h3 {
+                color: #282828;
+            }
+        }
+        .contact__container {
+            background-color: #4C4C50;
+        }
+        .contact-btn {
+            background-color: #E6DEFF;
+            color: #121212;
+            &:hover {
+                background-color: #E6DEFF;
+                // color: #282828;
+                color: #282828;
+            }
+        }
+        .contact .go-back button {
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .footer-links__informations a {
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .back-to-top {
+            background-color: #E6DEFF;
+        }
+        .modal {
+            background-color: #282828;
+            p, strong {
+                color:#FFFFFF;
+            }
+        }
+        .go-back {
+            color: #FFFFFF;
+            &:hover {
+                color: #E6DEFF;
+            }
+        }
+        .project__links a {
+            background-color: #E6DEFF;
+            color: #121212;
+            &:hover {
+                color: #4C4C50;
+            }
+        }
+        .slideshow__circle {
+            background-color: #4C4C50;
+            &.active {
+                background-color: #E6DEFF;
+            }
+        }
+        .slideshow__navigation button {
+            background-color: #4C4C50;
+            &:hover {
+                background-color: #E6DEFF;
+            }
+        }
+        .error a {
+            background-color: #E6DEFF;
+            color: #121212;
+            &:hover {
+                color: #4C4C50;
+            }
+        }
+    }
+}

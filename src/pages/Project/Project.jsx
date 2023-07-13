@@ -61,7 +61,7 @@ function Project() {
                 </ul>
             </div>
             {project.document && (
-            <div className="project__link-bonus">
+            <div className="project__links-bonus">
                 <a href={project.document} target="_blank">Voir le rapport d'intervention</a>
             </div>
             )}

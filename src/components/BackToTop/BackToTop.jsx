@@ -22,7 +22,7 @@ function BackToTop() {
     return (
         <div>
             {backToTopButton && (
-                <button className="scroll-to-top" onClick={scrollToTop}>
+                <button className="back-to-top" onClick={scrollToTop}>
                     <img 
                         src={whiteArrow}
                         alt="flèche pour remonter tout en haut de la page"    
