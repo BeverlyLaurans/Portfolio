@@ -12,7 +12,7 @@ function ContactForm() {
         {!showForm ? (
           <div className="contact-wrapper">
             <h2>Intéressé par mon travail ?<br />Parlons-en !</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Je suis actuellement ouverte aux différentes opportunités : CDI, CDD, alternance...</p>
               <button className="contact-btn" onClick={() => setShowForm(true)}>Contactez-moi</button>
           </div>
         ) : (

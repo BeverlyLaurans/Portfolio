@@ -58,12 +58,12 @@
         }
         a {
             text-decoration: none;
-            color: white;
+            color: $light-color;
             padding: 5px 10px;
-            background-color: $secondary-color;
+            background-color: $light-secondary-color;
             border-radius: 7px;
             &:hover {
-                color: $main-color;
+                color: $light-main-color;
             }
             @media (max-width: 480px) {
                 font-size: 14px;

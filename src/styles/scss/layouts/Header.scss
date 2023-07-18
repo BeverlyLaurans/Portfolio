@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 header {
     width:100%;
     height: 50px;
@@ -9,7 +11,10 @@ header {
     gap : 0 40px;
     flex-wrap: wrap;
     // justify-content: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
+        flex-wrap: nowrap;
+        position: relative;
+        justify-content: center;
         // height: 40px;
         // flex-direction: column;
     }
@@ -23,6 +28,9 @@ header {
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    @media (max-width: 1024px) {
+        height: 90%;
+    }
     @media (max-width: 768px) {
         width: 100%;
         justify-content: center;
@@ -35,6 +43,9 @@ header {
         width: 100%;
         height: 100%;
     }
+    a {
+        z-index: 2;
+    }
 }
 
 .nav-container {
@@ -44,11 +55,12 @@ header {
     flex-direction: row;
     gap: 0 40px;
     align-items: center;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         gap: 0 30px;
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        display: none;
     }
 }
 
@@ -71,7 +83,7 @@ nav {
     }
     a {
         text-decoration: none;
-        color: #1C3B58;
+        color: $light-main-color;
         font-size: 17px;
         font-weight: 400;
         @media (max-width: 768px) {
@@ -81,14 +93,14 @@ nav {
             font-size: 14px;
         }
         &:hover {
-            color: #6FC0CB;
+            color: $light-secondary-color;
         }
     }
 }
 
 .cv-btn {
-    background-color: #1C3B58;
-    color: #FFFFFF;
+    background-color: $light-main-color;
+    color: $light-color;
     border-radius: 6px;
     padding: 13px 20px;
     font-size: 16px;
@@ -104,7 +116,7 @@ nav {
         padding: 3px 9px;
     }
     &:hover {
-        color: #6FC0CB;
+        color: $light-secondary-color;
         cursor: pointer;
     }
 }

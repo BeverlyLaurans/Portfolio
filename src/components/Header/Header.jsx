@@ -5,6 +5,7 @@ import Logo from "../../assets/logo/logo-BL.svg";
 import lightBlueLogo from "../../assets/logo/logo-BL-lightblue.svg";
 import whiteLogo from "../../assets/logo/logo-BL-white.svg";
 import lightPinkLogo from "../../assets/logo/logo-BL-lightpink.svg";
+import NavBar from "../NavBar/NavBar";
 import "../../styles/scss/layouts/Header.scss";
 
 function Header() {
@@ -16,8 +17,6 @@ function Header() {
         <div className={`logo-container ${onMouseLogo ? "active" : ""} ${theme}`}>
           <Link to="/" >
             <img
-            // src={onMouseLogo ? lightBlueLogo : Logo}
-            // src={theme === 'dark' ? whiteLogo : Logo}
             src={onMouseLogo ? (theme === 'dark' ? lightPinkLogo : lightBlueLogo) : (theme === 'dark' ? whiteLogo : Logo)}
             alt="Logo Beverly Laurans"
             onMouseEnter={() => setOnMouseLogo(true)}
@@ -35,6 +34,7 @@ function Header() {
             </nav>
             <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank" className="cv-btn">Mon CV</a>
         </div>
+        <NavBar />
       </header>
     )
   }

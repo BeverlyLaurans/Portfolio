@@ -1,9 +1,11 @@
+@import "../utils/variables";
+
 footer {
     margin-top: 60px;
     font-size: 14px;
     font-weight: 400;
     hr {
-    color: #1C3B58;
+    color: $light-main-color;
     }
 }
 
@@ -42,9 +44,9 @@ footer {
         }
         a {
             text-decoration: none;
-            color: #1C3B58;
+            color: $light-main-color;
             &:hover {
-                color: #6FC0CB;
+                color: $light-secondary-color;
             }
         }
     }

@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 .project {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     }
     h1 {
         text-align: center;
+        margin-top: 0;
     }
     h2 {
         font-size: 22px;
@@ -17,10 +20,10 @@
         }
     }
     .go-back {
-        color: #1C3B58;
+        color: $light-main-color;
         margin-top: 20px 0;
         &:hover {
-            color: #6FC0CB;
+            color: $light-secondary-color;
         }
         @media (max-width: 768px) {
             font-size: 15px;
@@ -36,17 +39,19 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px 0 30px 0;
+    margin: 10px 0 35px 0;
     @media (max-width: 768px) {
         font-size: 15px;
+        margin: 10px 0 25px 0;
     }
     @media (max-width: 480px) {
         font-size: 14px;
+        margin: 10px 0 20px 0;
     }
     a {
        text-decoration: none; 
-       color: white;
-       background-color: #6FC0CB;
+       color: $light-color;
+       background-color: $light-secondary-color;
        border-radius: 6px;
        padding: 5px 10px;
        &:hover {
@@ -62,12 +67,12 @@
     margin-top: 20px;
     a {
         text-decoration: none; 
-        color: white;
-        background-color: #6FC0CB;
+        color: $light-color;
+        background-color: $light-secondary-color;
         border-radius: 6px;
         padding: 5px 10px;
         &:hover {
-            color: #1C3B58;
+            color: $light-main-color;
         }
         @media (max-width: 768px) {
             font-size: 15px;

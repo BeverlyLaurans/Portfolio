@@ -1,11 +1,18 @@
+@import "../utils/variables";
+
 .about {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     gap: 30px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         flex-direction: column-reverse;
+        gap: 20px;
+        width:100%;
+        align-items: center;
+    }
+    @media (max-width: 768px) {
         gap: 20px;
     }
     h1 {
@@ -29,7 +36,7 @@
     flex-direction: column;
     gap: 25px;
     align-items: flex-start;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         width: 100%;
         align-items: center;
     }
@@ -69,15 +76,14 @@
     }
     a {
         text-decoration: none;
-        color: #1C3B58;
+        color: $light-main-color;
         &:hover {
-            color: #6FC0CB;
+            color: $light-secondary-color;
         }
     }
 }
 
 .photo-container {
-    // width: 40%;
     width: fit-content;
     display: flex;
     justify-content: flex-end;
@@ -90,7 +96,6 @@
     img {
         border: 0;
         border-radius: 100%;
-        // width: 240px;
         height: 240px;
         @media (max-width: 768px) {
             width: 180px;
