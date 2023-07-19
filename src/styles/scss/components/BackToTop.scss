@@ -15,9 +15,15 @@
     background-color: $light-secondary-color;
     border: none;
     cursor: pointer;
+    @media (max-width: 1024px) {
+        bottom: 25px;
+        right: 20px;
+    }
     @media (max-width: 768px) {
         width: 35px;
         height: 35px;
+        bottom: 20px;
+        right: 15px;
     }
     @media (max-width: 480px) {
         width: 30px;

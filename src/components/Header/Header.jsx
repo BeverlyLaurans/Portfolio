@@ -11,17 +11,30 @@ import "../../styles/scss/layouts/Header.scss";
 function Header() {
   const [onMouseLogo, setOnMouseLogo] = useState(false);
   const { theme } = useContext(ThemeContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
     return (
       <header>
         <div className={`logo-container ${onMouseLogo ? "active" : ""} ${theme}`}>
           <Link to="/" >
+            {isMenuOpen ? (
             <img
-            src={onMouseLogo ? (theme === 'dark' ? lightPinkLogo : lightBlueLogo) : (theme === 'dark' ? whiteLogo : Logo)}
-            alt="Logo Beverly Laurans"
-            onMouseEnter={() => setOnMouseLogo(true)}
-            onMouseLeave={() => setOnMouseLogo(false)}
+              src={theme === 'dark' ? whiteLogo : whiteLogo}
+              alt="Logo Beverly Laurans"
+              style={{ cursor: 'default' }}
             />
+          ) : (
+            <img
+              src={onMouseLogo ? (theme === 'dark' ? lightPinkLogo : lightBlueLogo) : (theme === 'dark' ? whiteLogo : Logo)}
+              alt="Logo Beverly Laurans"
+              onMouseEnter={() => setOnMouseLogo(true)}
+              onMouseLeave={() => setOnMouseLogo(false)}
+            />
+          )}
           </Link>
         </div>
         <div className="nav-container">
@@ -34,7 +47,7 @@ function Header() {
             </nav>
             <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank" className="cv-btn">Mon CV</a>
         </div>
-        <NavBar />
+        <NavBar isMenuOpen={isMenuOpen} onMenuToggle={handleMenuToggle}/>
       </header>
     )
   }

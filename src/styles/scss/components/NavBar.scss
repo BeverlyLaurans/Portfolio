@@ -26,30 +26,42 @@
         top: 2px;
     }
     &.dark {
-        .burger-menu-bar {
-            background-color: $dark-main-color;
-            // &:hover {
-            //     background-color: $dark-secondary-color;
-            // }
-        }
-        ul {
-            background-color: $dark-fifth-color;
+        .burger-menu-wrapper {
+            .burger-menu-bar {
+                background-color: $dark-main-color;
+            }
+        &.hover {
+            .burger-menu-bar {
+                background-color: $dark-secondary-color;
+            }
         }
     }
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        list-style: none;
-        margin: 0;
-        padding: 105px 40px 40px 40px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: $light-main-color;
+    }
+    .cv-btn {
+        background-color: $light-secondary-color;
+        &:hover {
+            color: $light-main-color;
+        }
+    }
+}
+
+.burger-menu-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 105px 40px 40px 40px;
+    position: absolute;
+    top: -35px;
+    left: -80px;
+    right: -80px;
+    z-index: 0;
+    background-color: $light-main-color;
+    @media (min-width: 1025px) {
+        display: none;
     }
     a {
         text-decoration: none;
@@ -58,10 +70,20 @@
             color: $light-secondary-color;
         }
     }
-    .cv-btn {
-        background-color: $light-secondary-color;
-        &:hover {
-            color: $light-main-color;
+    &.dark {
+        background-color: $dark-fifth-color;
+        li a {
+            &:hover {
+                color: $dark-secondary-color;
+            }
+        }
+    }
+    &.light {
+        .cv-btn {
+            background-color: $light-secondary-color;
+            &:hover {
+                color: $light-main-color;
+            }
         }
     }
 }
@@ -74,6 +96,11 @@
     justify-content: space-between;
     align-content: flex-start;
     cursor: pointer;
+    &.hover {
+        .burger-menu-bar {
+            background-color: $light-secondary-color;
+        }
+    }
 }
 
 .burger-menu-bar {
@@ -108,7 +135,7 @@
     }
 
     .burger-menu-bar:nth-child(3) {
-        transform: rotate(135deg) translate(-0.75em, 1em);
+        transform: rotate(135deg) translate(-0.5em, 0.75em);
         transition: ease-in-out 0.3s;
         @media (max-width: 768px) {
             transform: rotate(135deg) translate(-0.3em, 0.75em);
