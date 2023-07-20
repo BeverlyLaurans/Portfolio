@@ -19,7 +19,7 @@ function Error() {
         </div>
         <div className="error__details">
           <p>Il semblerait que la page que vous cherchez n'existe pas.</p>
-          <Link to="/Portfolio" onClick={backToTopHome}><strong>Retourner à la page d'accueil</strong></Link>
+          <Link to="/" onClick={backToTopHome}><strong>Retourner à la page d'accueil</strong></Link>
         </div>
       </section>
     )

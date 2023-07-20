@@ -21,7 +21,7 @@ function Project() {
         return (
         <div className="project">
             <h1>{project.title}</h1>
-            <Link to="/Portfolio" ><p className="go-back">← Retour</p></Link>
+            <Link to="/" ><p className="go-back">← Retour</p></Link>
             <Slideshow 
             imgSrc={project.pictures}
             imgAlt={project.title}

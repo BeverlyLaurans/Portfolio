@@ -30,12 +30,31 @@
             .burger-menu-bar {
                 background-color: $dark-main-color;
             }
+        &.open {
+        .burger-menu-bar {
+            background-color: $dark-main-color;
+        }
+        }
         &.hover {
             .burger-menu-bar {
                 background-color: $dark-secondary-color;
             }
         }
+        }
     }
+    &.light {
+        .burger-menu-wrapper {
+            &.open {
+                .burger-menu-bar {
+                    background-color: $light-color;
+                }
+            }
+            &.hover {
+                .burger-menu-bar {
+                    background-color: $light-secondary-color;
+                }
+            }
+        }
     }
     .cv-btn {
         background-color: $light-secondary-color;
@@ -96,11 +115,6 @@
     justify-content: space-between;
     align-content: flex-start;
     cursor: pointer;
-    &.hover {
-        .burger-menu-bar {
-            background-color: $light-secondary-color;
-        }
-    }
 }
 
 .burger-menu-bar {
@@ -110,9 +124,6 @@
     border-radius: 4px;
     transform: rotate(0) translate(0);
     transition: ease-in-out 0.3s;
-    // &:hover {
-    //     background-color: $light-secondary-color;
-    // }
 }
 
 

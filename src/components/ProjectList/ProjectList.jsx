@@ -59,7 +59,7 @@ function ProjectList() {
       </div>
         <div className="projects-wrapper">
           {filteredProjects.map((project) => (
-          <Link to={`/Portfolio/projets/${project.id}`} key={project.id}>
+          <Link to={`/projets/${project.id}`} key={project.id}>
             <div className="project-card">
               <div className="project-card-picture">
                 <img src={project.cover} alt={project.title}></img>

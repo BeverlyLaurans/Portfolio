@@ -20,7 +20,7 @@ function Header() {
     return (
       <header>
         <div className={`logo-container ${onMouseLogo ? "active" : ""} ${theme}`}>
-          <Link to="/Portfolio" >
+          <Link to="/" >
             {isMenuOpen ? (
             <img
               src={theme === 'dark' ? whiteLogo : whiteLogo}
@@ -40,9 +40,9 @@ function Header() {
         <div className="nav-container">
             <nav>
                 <ul>
-                  <li><a href="Portfolio/#a-propos">À propos</a></li>
-                  <li><a href="Portfolio/#projets">Mes projets</a></li>
-                  <li><a href="Portfolio/#competences">Mes compétences</a></li>
+                  <li><a href="/#a-propos">À propos</a></li>
+                  <li><a href="/#projets">Mes projets</a></li>
+                  <li><a href="/#competences">Mes compétences</a></li>
                 </ul>
             </nav>
             <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank" className="cv-btn">Mon CV</a>

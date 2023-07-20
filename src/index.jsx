@@ -22,11 +22,11 @@ export default function App() {
   return (
     <Router>
       <ThemeProvider>
-      <DarkMode />
-      <Header />
+      <DarkMode/>
+      <Header/>
       <Routes>
-        <Route exact path="/Portfolio" element={<Home />} />
-        <Route exact path="/Portfolio/projets/:projectId" element={<Project />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/projets/:projectId" element={<Project />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <BackToTop />

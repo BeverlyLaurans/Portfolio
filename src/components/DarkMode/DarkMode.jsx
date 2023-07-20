@@ -14,6 +14,15 @@ const DarkMode = () => {
     <div className="dark-mode" onClick={toggleTheme}>
       <img
         src={onMouseLogo ? (theme === 'light' ? lightBlueToDarkModeIcon : lightPinkToDarkModeIcon) : (theme === 'light' ? lightToDarkModeIcon : darkToLightModeIcon)}
+        // src={
+        //   onMouseLogo
+        //     ? isMenuOpen // Use the isMenuOpen prop to determine which icon to show
+        //       ? theme === 'light' ? lightBlueToDarkModeIcon : lightPinkToDarkModeIcon
+        //       : theme === 'light' ? lightBlueToDarkModeIcon : darkToLightModeIcon
+        //     : theme === 'light'
+        //     ? darkToLightModeIcon
+        //     : darkToLightModeIcon
+        // }
         alt={theme === 'light' ? 'Mode nuit' : 'Mode jour'}
         onMouseEnter={() => setOnMouseLogo(true)}
         onMouseLeave={() => setOnMouseLogo(false)}
