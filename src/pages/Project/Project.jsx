@@ -21,7 +21,7 @@ function Project() {
         return (
         <div className="project">
             <h1>{project.title}</h1>
-            <Link to="/" ><p className="go-back">← Retour</p></Link>
+            <Link to="/Portfolio" ><p className="go-back">← Retour</p></Link>
             <Slideshow 
             imgSrc={project.pictures}
             imgAlt={project.title}
@@ -41,12 +41,16 @@ function Project() {
                         <li key={`${goal}-${project.id}`}>{goal}</li>
                     ))}
                 </ul>
-                <h2>Tâches réalisées :</h2>
-                <ul className="project__details-list">
-                    {project.tasks.map((task) => (
-                        <li key={`${task}-${project.id}`}>{task}</li>
-                    ))}
-                </ul>
+                {project.tasks.length > 0 ? (
+                    <div>
+                        <h2>Tâches réalisées :</h2>
+                        <ul className="project__details-list">
+                            {project.tasks.map((task) => (
+                                <li key={`${task}-${project.id}`}>{task}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ) : null}
                 <h2>Langages & technos utilisés :</h2>
                 <ul className="project__details-list">
                     {project.technologies.map((technology) => (
