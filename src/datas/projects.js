@@ -27,10 +27,27 @@ export const projectsDatas = [
 		],
 		"tools": [
 			"Create React App",
-			"Chrome DevTools"
+			"Chrome DevTools",
+			"Firebase"
 		],
 		"tasks": [
-			""
+			"Mise en place du projet avec Create React App",
+			"Mise en place du routeur et de la navigation entre les différentes pages avec React Router",
+			"Gestion de la navigation via le menu burger",
+			"Création et gestion des composants, ainsi que des pages",
+			"Récupération et affichage des projets sur la page d'accueil",
+			"Filtrage des projets par catégorie",
+			"Utilisation des media queries pour le responsive design",
+			"Gestion de la modale des mentions légales",
+			"Gestion du carrousel affichant les photos des projets",
+			"Gestion de l'animation des menus accordéons et du menu burger",
+			"Gestion du mode nuit/jour",
+			"Utilisation de Sass et structuration des fichiers Scss",
+			"Optimisation du SEO technique on-page et de l'accessibilité",
+			"Mise en ligne du site sur GitHub Pages",
+			// "Optimisation des images du site : réduction de taille, compression et conversion en webP",
+			// "Ajout des métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards)",
+			// "Autres optimisations des performances du site : minification, import de la police via le CSS, report du chargement de certains fichiers...", 
 		]
 	},
 	{

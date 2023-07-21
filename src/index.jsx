@@ -1,4 +1,3 @@
-// import ReactGA from 'react-ga';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -12,10 +11,6 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import Footer from "./components/Footer/Footer";
 // import "./styles/css/prefixed/style.css";
 import "./styles/scss/main.scss";
-
-// const TRACKING_ID = "G-ZWE2TCZSYJ";
-// ReactGA.initialize(TRACKING_ID);
-// ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function App() {
 
