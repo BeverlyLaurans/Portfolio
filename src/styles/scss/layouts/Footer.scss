@@ -1,64 +1,65 @@
 @import "../utils/variables";
 
 footer {
-    margin-top: 60px;
-    font-size: 14px;
-    font-weight: 400;
-    hr {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: 400;
+  hr {
     color: $light-main-color;
-    }
+  }
 }
 
 .footer-links {
-    padding: 40px 0 10px 0;
+  padding: 40px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    align-items: flex-end;
+  }
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
+  &__social {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    @media (max-width: 768px) {
-        align-items: flex-end;
+    gap: 15px;
+    img {
+      display: flex;
+      height: 24px;
+      width: 24px;
     }
-    @media (max-width: 480px) {
-        font-size: 13px;
+  }
+}
+
+.footer-links__informations {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: $light-main-color;
+    &:hover {
+      color: $light-secondary-color;
     }
-    &__informations {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        align-items: center;
-        @media (max-width: 768px) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        p {
-            margin: 0;
-            padding: 0;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            gap: 25px;
-        }
-        a {
-            text-decoration: none;
-            color: $light-main-color;
-            &:hover {
-                color: $light-secondary-color;
-            }
-        }
-    }
-    &__social {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        img {
-            display: flex;
-            height: 24px;
-            width: 24px;
-        }
-    }
+  }
 }

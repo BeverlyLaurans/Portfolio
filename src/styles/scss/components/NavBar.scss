@@ -1,159 +1,154 @@
 @import "../../scss//utils/variables";
 
 .burger-menu-container {
+  height: 30px;
+  width: 35px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 2;
+  @media (min-width: 1025px) {
+    display: none;
+  }
+  @media (max-width: 1024px) {
     height: 30px;
-    width: 35px;
-    position: absolute;
-    left: 0;
-    top: 10px;
-    z-index: 2;
-    @media (min-width: 1025px) {
-        display: none;
-    }
-    @media (max-width: 1024px) {
-        height: 30px;
-        width: 40px;
-        top: 5px;
-    }
-    @media (max-width: 768px) {
-        height: 25px;
-        width: 30px;
-        top: 12px;
-    }
-    @media (max-width: 480px) {
-        height: 25px;
-        width: 30px;
-        top: 2px;
-    }
-    &.dark {
-        .burger-menu-wrapper {
-            .burger-menu-bar {
-                background-color: $dark-main-color;
-            }
-        &.open {
+    width: 40px;
+    top: 5px;
+  }
+  @media (max-width: 768px) {
+    height: 25px;
+    width: 30px;
+    top: 12px;
+  }
+  @media (max-width: 480px) {
+    height: 25px;
+    width: 30px;
+    top: 2px;
+  }
+  &.dark {
+    .burger-menu-wrapper {
+      .burger-menu-bar {
+        background-color: $dark-main-color;
+      }
+      &.open {
         .burger-menu-bar {
-            background-color: $dark-main-color;
+          background-color: $dark-main-color;
         }
+      }
+      &.hover {
+        .burger-menu-bar {
+          background-color: $dark-secondary-color;
         }
-        &.hover {
-            .burger-menu-bar {
-                background-color: $dark-secondary-color;
-            }
-        }
-        }
+      }
     }
-    &.light {
-        .burger-menu-wrapper {
-            &.open {
-                .burger-menu-bar {
-                    background-color: $light-color;
-                }
-            }
-            &.hover {
-                .burger-menu-bar {
-                    background-color: $light-secondary-color;
-                }
-            }
+  }
+  &.light {
+    .burger-menu-wrapper {
+      &.open {
+        .burger-menu-bar {
+          background-color: $light-color;
         }
-    }
-    .cv-btn {
-        background-color: $light-secondary-color;
-        &:hover {
-            color: $light-main-color;
+      }
+      &.hover {
+        .burger-menu-bar {
+          background-color: $light-secondary-color;
         }
+      }
     }
+  }
+  .cv-btn {
+    background-color: $light-secondary-color;
+    &:hover {
+      color: $light-main-color;
+    }
+  }
 }
 
 .burger-menu-navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 105px 40px 40px 40px;
-    position: absolute;
-    top: -35px;
-    left: -80px;
-    right: -80px;
-    z-index: 1;
-    background-color: $light-main-color;
-    @media (min-width: 1025px) {
-        display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 105px 40px 40px 40px;
+  position: absolute;
+  top: -35px;
+  left: -80px;
+  right: -80px;
+  z-index: 1;
+  background-color: $light-main-color;
+  @media (min-width: 1025px) {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: $light-color;
+    &:hover {
+      color: $light-secondary-color;
     }
-    a {
-        text-decoration: none;
-        color: $light-color;
-        &:hover {
-            color: $light-secondary-color;
-        }
+  }
+  &.dark {
+    background-color: $dark-fifth-color;
+    li a {
+      &:hover {
+        color: $dark-secondary-color;
+      }
     }
-    &.dark {
-        background-color: $dark-fifth-color;
-        li a {
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
+  }
+  &.light {
+    .cv-btn {
+      background-color: $light-secondary-color;
+      &:hover {
+        color: $light-main-color;
+      }
     }
-    &.light {
-        .cv-btn {
-            background-color: $light-secondary-color;
-            &:hover {
-                color: $light-main-color;
-            }
-        }
-    }
+  }
 }
 
 .burger-menu-wrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-    cursor: pointer;
-}
-
-.burger-menu-bar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  cursor: pointer;
+  .burger-menu-bar {
     width: 100%;
     height: 2px;
     background-color: $light-main-color;
     border-radius: 4px;
     transform: rotate(0) translate(0);
     transition: ease-in-out 0.3s;
-}
-
-
-.burger-menu-wrapper.open {
+  }
+  &.open {
     .burger-menu-bar:nth-child(1) {
-        transform: rotate(45deg) translate(0.5em, 0.75em);
+      transform: rotate(45deg) translate(0.5em, 0.75em);
+      transition: ease-in-out 0.3s;
+      @media (max-width: 768px) {
+        transform: rotate(45deg) translate(0.3em, 0.75em);
         transition: ease-in-out 0.3s;
-        @media (max-width: 768px) {
-            transform: rotate(45deg) translate(0.3em, 0.75em);
-            transition: ease-in-out 0.3s;
-        }
-        @media (max-width: 480px) {
-            transform: rotate(45deg) translate(0.3em, 0.75em);
-        }
+      }
+      @media (max-width: 480px) {
+        transform: rotate(45deg) translate(0.3em, 0.75em);
+      }
     }
-
     .burger-menu-bar:nth-child(2) {
-        transform: scale(0);
-        transition: ease-in-out 0.3s;
+      transform: scale(0);
+      transition: ease-in-out 0.3s;
     }
-
     .burger-menu-bar:nth-child(3) {
-        transform: rotate(135deg) translate(-0.5em, 0.75em);
+      transform: rotate(135deg) translate(-0.5em, 0.75em);
+      transition: ease-in-out 0.3s;
+      @media (max-width: 768px) {
+        transform: rotate(135deg) translate(-0.3em, 0.75em);
         transition: ease-in-out 0.3s;
-        @media (max-width: 768px) {
-            transform: rotate(135deg) translate(-0.3em, 0.75em);
-            transition: ease-in-out 0.3s;
-        }
-        @media (max-width: 480px) {
-            transform: rotate(135deg) translate(-0.3em, 0.75em);
-        }
+      }
+      @media (max-width: 480px) {
+        transform: rotate(135deg) translate(-0.3em, 0.75em);
+      }
     }
+  }
 }

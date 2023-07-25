@@ -9,8 +9,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Error from "./components/Error/Error";
 import BackToTop from "./components/BackToTop/BackToTop";
 import Footer from "./components/Footer/Footer";
-// import "./styles/css/prefixed/style.css";
-import "./styles/scss/main.scss";
+import "./styles/css/prefixed/style.css";
 
 export default function App() {
 

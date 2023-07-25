@@ -1,104 +1,104 @@
 @import "../utils/variables";
 
 .project {
-    display: flex;
-    flex-direction: column;
-    a {
-        text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 22px;
+    @media (max-width: 768px) {
+      font-size: 17px;
     }
-    h1 {
-        text-align: center;
-        margin-top: 0;
+    @media (max-width: 480px) {
+      font-size: 15px;
     }
-    h2 {
-        font-size: 22px;
-        @media (max-width: 768px) {
-            font-size: 17px;
-        }
-        @media (max-width: 480px) {
-            font-size: 15px;
-        }
+  }
+  .go-back {
+    color: $light-main-color;
+    margin-top: 20px 0;
+    &:hover {
+      color: $light-secondary-color;
     }
-    .go-back {
-        color: $light-main-color;
-        margin-top: 20px 0;
-        &:hover {
-            color: $light-secondary-color;
-        }
-        @media (max-width: 768px) {
-            font-size: 15px;
-        }
-        @media (max-width: 480px) {
-            font-size: 14px;
-        }
+    @media (max-width: 768px) {
+      font-size: 15px;
     }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
 }
 
 .project__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10px 0 35px 0;
-    @media (max-width: 768px) {
-        font-size: 15px;
-        margin: 10px 0 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0 35px 0;
+  @media (max-width: 768px) {
+    font-size: 15px;
+    margin: 10px 0 25px 0;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+  }
+  a {
+    text-decoration: none;
+    color: $light-color;
+    background-color: $light-secondary-color;
+    border-radius: 6px;
+    padding: 5px 10px;
+    &:hover {
+      color: #1c3b58;
     }
-    @media (max-width: 480px) {
-        font-size: 14px;
-        margin: 10px 0 20px 0;
-    }
-    a {
-       text-decoration: none; 
-       color: $light-color;
-       background-color: $light-secondary-color;
-       border-radius: 6px;
-       padding: 5px 10px;
-       &:hover {
-        color: #1C3B58;
-       }
-    }
+  }
 }
 
 .project__links-bonus {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    a {
-        text-decoration: none; 
-        color: $light-color;
-        background-color: $light-secondary-color;
-        border-radius: 6px;
-        padding: 5px 10px;
-        &:hover {
-            color: $light-main-color;
-        }
-        @media (max-width: 768px) {
-            font-size: 15px;
-        }
-        @media (max-width: 480px) {
-            font-size: 14px;
-        }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: $light-color;
+    background-color: $light-secondary-color;
+    border-radius: 6px;
+    padding: 5px 10px;
+    &:hover {
+      color: $light-main-color;
     }
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
 }
 
 .project__details {
-    p {
-        margin: 0;
-        @media (max-width: 768px) {
-            font-size: 15px;
-        }
-        @media (max-width: 480px) {
-            font-size: 14px;
-        }
+  p {
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 15px;
     }
-    li {
-        @media (max-width: 768px) {
-            font-size: 15px;
-        }
-        @media (max-width: 480px) {
-            font-size: 14px;
-        }
+    @media (max-width: 480px) {
+      font-size: 14px;
     }
+  }
+  li {
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
 }

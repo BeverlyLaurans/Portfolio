@@ -1,158 +1,157 @@
 @import "../utils/variables";
 
 .dark-mode {
-    position: absolute;
-    right: 75px;
-    top: 54px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 2;
-    @media (max-width: 1024px) {
-        top: 50px;
-        right: 80px;
-    }
-    @media (max-width: 768px) {
-        top: 45px;
-        right: 60px;
-    }
-    @media (max-width: 480px) {
-        right: 40px;
-        top: 30px;
-    }
-    img {
-        width: 100%;
-        height: 100%;
-    }
+  position: absolute;
+  right: 75px;
+  top: 54px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 2;
+  @media (max-width: 1024px) {
+    top: 50px;
+    right: 80px;
+  }
+  @media (max-width: 768px) {
+    top: 45px;
+    right: 60px;
+  }
+  @media (max-width: 480px) {
+    right: 40px;
+    top: 30px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // Gestion des couleurs en dark mode
-body {
-    &.dark {
-        background-color: $dark-background-color;
-        color: $dark-main-color;
-        nav a {
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .cv-btn {
-            background-color: $dark-secondary-color;
-            color: $dark-color;
-            &:hover {
-                color: $dark-fifth-color;
-            }
-        }
-        .introduction-container a {
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .tag-list-wrapper li {
-            border: 1.2px solid $dark-secondary-color;
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .tag-item.active {
-            background-color: $dark-secondary-color;
-            color: $dark-color;
-            &:hover {
-                color: $dark-main-color;
-            }
-        }
-        .project-card {
-            background-color: $dark-fourth-color;
-            .tag-item {
-                border: 1px solid $dark-main-color;
-                color: $dark-main-color;
-            }
-        }
-        .project-card-details {
-            h3 {
-                color: $dark-secondary-color;
-            }
-            p {
-                color: $dark-main-color;
-            }
-        }
-        .accordion {
-            background-color: $dark-fourth-color;
-            h4 {
-                color: $dark-secondary-color;
-            }
-        }
-        .accordion__title {
-            background-color: $dark-secondary-color;
-            h3 {
-                color: $dark-fourth-color;
-            }
-        }
-        .contact__container {
-            background-color: $dark-fifth-color;
-        }
-        .contact-btn {
-            background-color: $dark-secondary-color;
-            color: #121212;
-            &:hover {
-                background-color: $dark-secondary-color;
-                color: $dark-fourth-color;
-            }
-        }
-        .contact .go-back button {
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .footer-links__informations a {
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .back-to-top {
-            background-color: $dark-secondary-color;
-        }
-        .modal {
-            background-color: #282828;
-            p, strong {
-                color:$dark-main-color;
-            }
-        }
-        .go-back {
-            color: $dark-main-color;
-            &:hover {
-                color: $dark-secondary-color;
-            }
-        }
-        .project__links a {
-            background-color: $dark-secondary-color;
-            color: $dark-color;
-            &:hover {
-                color: $dark-fifth-color;
-            }
-        }
-        .slideshow__circle {
-            background-color: $dark-fifth-color;
-            &.active {
-                background-color: $dark-secondary-color;
-            }
-        }
-        .slideshow__navigation button {
-            background-color: $dark-fifth-color;
-            &:hover {
-                background-color: $dark-secondary-color;
-            }
-        }
-        .error a {
-            background-color: $dark-secondary-color;
-            color: $dark-color;
-            &:hover {
-                color: $dark-fifth-color;
-            }
-        }
+body.dark {
+  background-color: $dark-background-color;
+  color: $dark-main-color;
+  nav a {
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
     }
+  }
+  .cv-btn {
+    background-color: $dark-secondary-color;
+    color: $dark-color;
+    &:hover {
+      color: $dark-fifth-color;
+    }
+  }
+  .introduction-container a {
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+  }
+  .tag-list-wrapper li {
+    border: 1.2px solid $dark-secondary-color;
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+  }
+  .tag-item.active {
+    background-color: $dark-secondary-color;
+    color: $dark-color;
+    &:hover {
+      color: $dark-main-color;
+    }
+  }
+  .project-card {
+    background-color: $dark-fourth-color;
+    .tag-item {
+      border: 1px solid $dark-main-color;
+      color: $dark-main-color;
+    }
+  }
+  .project-card-details {
+    h3 {
+      color: $dark-secondary-color;
+    }
+    p {
+      color: $dark-main-color;
+    }
+  }
+  .accordion {
+    background-color: $dark-fourth-color;
+    h4 {
+      color: $dark-secondary-color;
+    }
+  }
+  .accordion__title {
+    background-color: $dark-secondary-color;
+    h3 {
+      color: $dark-fourth-color;
+    }
+  }
+  .contact__container {
+    background-color: $dark-fifth-color;
+  }
+  .contact-btn {
+    background-color: $dark-secondary-color;
+    color: #121212;
+    &:hover {
+      background-color: $dark-secondary-color;
+      color: $dark-fourth-color;
+    }
+  }
+  .contact .go-back button {
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+  }
+  .footer-links__informations a {
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+  }
+  .back-to-top {
+    background-color: $dark-secondary-color;
+  }
+  .modal {
+    background-color: #282828;
+    p,
+    strong {
+      color: $dark-main-color;
+    }
+  }
+  .go-back {
+    color: $dark-main-color;
+    &:hover {
+      color: $dark-secondary-color;
+    }
+  }
+  .project__links a {
+    background-color: $dark-secondary-color;
+    color: $dark-color;
+    &:hover {
+      color: $dark-fifth-color;
+    }
+  }
+  .slideshow__circle {
+    background-color: $dark-fifth-color;
+    &.active {
+      background-color: $dark-secondary-color;
+    }
+  }
+  .slideshow__navigation button {
+    background-color: $dark-fifth-color;
+    &:hover {
+      background-color: $dark-secondary-color;
+    }
+  }
+  .error a {
+    background-color: $dark-secondary-color;
+    color: $dark-color;
+    &:hover {
+      color: $dark-fifth-color;
+    }
+  }
 }

@@ -1,116 +1,116 @@
 @import "../utils/variables";
 
 header {
-    width:100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
-    gap : 0 40px;
-    flex-wrap: wrap;
-    @media (max-width: 1024px) {
-        position: relative;
-        justify-content: center;
-    }
-    @media (max-width: 480px) {
-        height: 30px;
-    }
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 0 40px;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    position: relative;
+    justify-content: center;
+  }
+  @media (max-width: 480px) {
+    height: 30px;
+  }
 }
 
 .logo-container {
-    width: 10%;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    height: 80%;
+  }
+  @media (max-width: 480px) {
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    @media (max-width: 1024px) {
-        width: 100%;
-        height: 90%;
-        justify-content: center;
-    }
-    @media (max-width: 768px) {
-        width: 100%;
-        justify-content: center;
-        height: 80%;
-    }
-    @media (max-width: 480px) {
-        height: 100%;
-    }
-    img {
-        width: 100%;
-        height: 100%;
-    }
-    a {
-        z-index: 2;
-    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  a {
+    z-index: 2;
+  }
 }
 
 .nav-container {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    gap: 0 40px;
-    align-items: center;
-    justify-content: flex-end;
-    @media (max-width: 1024px) {
-        display: none;
-    }
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 0 40px;
+  align-items: center;
+  justify-content: flex-end;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 nav {
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        gap: 40px;
-        @media (max-width: 768px) {
-            gap: 30px;
-        }
-        @media (max-width: 480px) {
-            gap: 25px;
-        }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 40px;
+    @media (max-width: 768px) {
+      gap: 30px;
     }
-    li {
-        min-width: fit-content;
+    @media (max-width: 480px) {
+      gap: 25px;
     }
-    a {
-        text-decoration: none;
-        color: $light-main-color;
-        font-size: 17px;
-        font-weight: 400;
-        @media (max-width: 768px) {
-            font-size: 15px;
-        }
-        @media (max-width: 480px) {
-            font-size: 14px;
-        }
-        &:hover {
-            color: $light-secondary-color;
-        }
+  }
+  li {
+    min-width: fit-content;
+  }
+  a {
+    text-decoration: none;
+    color: $light-main-color;
+    font-size: 17px;
+    font-weight: 400;
+    @media (max-width: 768px) {
+      font-size: 15px;
     }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+    &:hover {
+      color: $light-secondary-color;
+    }
+  }
 }
 
 .cv-btn {
-    background-color: $light-main-color;
-    color: $light-color;
-    border-radius: 6px;
-    padding: 13px 20px;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;
-    min-width: fit-content;
-    @media (max-width: 768px) {
-        font-size: 15px;
-        padding: 7px 12px;
-    }
-    @media (max-width: 480px) {
-        font-size: 13px;
-        padding: 3px 9px;
-    }
-    &:hover {
-        color: $light-secondary-color;
-        cursor: pointer;
-    }
+  background-color: $light-main-color;
+  color: $light-color;
+  border-radius: 6px;
+  padding: 13px 20px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  min-width: fit-content;
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+  @media (max-width: 480px) {
+    font-size: 13px;
+    padding: 3px 9px;
+  }
+  &:hover {
+    color: $light-secondary-color;
+    cursor: pointer;
+  }
 }
