@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import Avatar from "../../assets/avatar/photo-BL.jpg";
-import html5Icon from "../../assets/icons/tools/html5-icon.png";
-import css3Icon from "../../assets/icons/tools/css3-icon.png";
+import Avatar from "../../assets/avatar/photo-BL.webp";
+import html5Icon from "../../assets/icons/tools/html5-icon.webp";
+import css3Icon from "../../assets/icons/tools/css3-icon.webp";
 import javascriptIcon from "../../assets/icons/tools/javascript-icon.png";
-import reactIcon from "../../assets/icons/tools/react-icon.png";
-import nodeIcon from "../../assets/icons/tools/nodejs-icon.png";
+import reactIcon from "../../assets/icons/tools/react-icon.webp";
+import nodeIcon from "../../assets/icons/tools/nodejs-icon.webp";
 import githubIcon from "../../assets/icons/social/github-icon.png";
 import whiteGithubIcon from "../../assets/icons/social/github-white-icon.svg";
 import "../../styles/scss/components/Introduction.scss";
