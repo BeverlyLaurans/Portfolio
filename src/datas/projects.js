@@ -12,11 +12,11 @@ export const projectsDatas = [
 			"/images/portfolio/portfolio1.webp",
 			"/images/portfolio/portfolio2.webp",
 			"/images/portfolio/portfolio3.webp",
-			"/images/portfolio/portfolio-mobile1.webp",
-			"/images/portfolio/portfolio-mobile2.webp",
-			"/images/portfolio/portfolio-mobile3.webp",
-			"/images/portfolio/portfolio-mobile4.webp",
-			"/images/portfolio/portfolio-mobile5.webp"
+			// "/images/portfolio/portfolio-mobile1.webp",
+			// "/images/portfolio/portfolio-mobile2.webp",
+			// "/images/portfolio/portfolio-mobile3.webp",
+			// "/images/portfolio/portfolio-mobile4.webp",
+			// "/images/portfolio/portfolio-mobile5.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio",
@@ -115,9 +115,9 @@ export const projectsDatas = [
 			"/images/kasa/kasa-desktop2.webp",
 			"/images/kasa/kasa-desktop3.webp",
 			"/images/kasa/kasa-desktop4.webp",
-			"/images/kasa/kasa-mobile1.webp",
-			"/images/kasa/kasa-mobile2.webp",
-			"/images/kasa/kasa-mobile3.webp"
+			// "/images/kasa/kasa-mobile1.webp",
+			// "/images/kasa/kasa-mobile2.webp",
+			// "/images/kasa/kasa-mobile3.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Kasa-P6-OCR",
@@ -264,10 +264,10 @@ export const projectsDatas = [
 			"/images/booki/booki-desktop1.webp",
 			"/images/booki/booki-desktop2.webp",
 			"/images/booki/booki-desktop3.webp",
-			"/images/booki/booki-mobile1.webp",
-			"/images/booki/booki-mobile2.webp",
-			"/images/booki/booki-mobile3.webp",
-			"/images/booki/booki-mobile4.webp"
+			// "/images/booki/booki-mobile1.webp",
+			// "/images/booki/booki-mobile2.webp",
+			// "/images/booki/booki-mobile3.webp",
+			// "/images/booki/booki-mobile4.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Booki-P2-OCR",
