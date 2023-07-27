@@ -23,7 +23,7 @@ function Introduction() {
         <p>Issue d'un parcours webmarketing, et ayant toujours travaillé auprès 
         de développeurs web, j'ai finalement décidé de me lancer avec la 
         formation OpenClassrooms ! N'hésitez pas à faire un tour sur 
-        <a href="/#projets"><b>mes projets</b></a>, mon 
+        <a href="/#projets"><b> mes projets</b></a>, mon 
         <a href="https://github.com/BeverlyLaurans?tab=repositories">profil GitHub</a>, mon 
         <a href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf" target="_blank">CV</a> ou encore mon 
         <a href="https://fr.linkedin.com/in/beverlylaurans">profil LinkedIn</a> afin d'en savoir plus !</p>

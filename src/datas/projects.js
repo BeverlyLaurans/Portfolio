@@ -3,15 +3,15 @@ export const projectsDatas = [
 		"id": "2355815",
 		"title": "Mon portfolio 💻",
 		"info": "Création de mon site (oui celui-ci !) avec React.",
-		"cover": "/images/portfolio/portfolio-cover.png",
+		"cover": "/images/portfolio/portfolio-cover.webp",
 		"tags": [
 			"React",
 			"Sass"
         ],
 		"pictures": [
-			"/images/portfolio/portfolio1.png",
-			"/images/portfolio/portfolio2.png",
-			"/images/portfolio/portfolio3.png"
+			"/images/portfolio/portfolio1.webp",
+			"/images/portfolio/portfolio2.webp",
+			"/images/portfolio/portfolio3.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio",
@@ -54,19 +54,19 @@ export const projectsDatas = [
 		"id": "5797026",
 		"title": "Mon Vieux Grimoire",
 		"info": "Mise en place du serveur et de l'API de manière sécurisée.",
-		"cover": "/images/mon-vieux-grimoire/mon-vieux-grimoire-cover.png",
+		"cover": "/images/mon-vieux-grimoire/mon-vieux-grimoire-cover.webp",
 		"tags": [
 			"Express.js",
 			"MongoDB"
         ],
 		"pictures": [
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire1.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire2.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire3.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire4.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire5.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire6.png",
-			"/images/mon-vieux-grimoire/mon-vieux-grimoire7.png"
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire1.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire2.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire3.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire4.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire5.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire6.webp",
+			"/images/mon-vieux-grimoire/mon-vieux-grimoire7.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Mon-Vieux-Grimoire-P7-OCR/tree/main/backend",
@@ -100,19 +100,19 @@ export const projectsDatas = [
 		"id": "3423170",
 		"title": "Kasa",
 		"info": "Création d'une application web avec React et utilisation de Sass.",
-		"cover": "/images/kasa/kasa-cover.png",
+		"cover": "/images/kasa/kasa-cover.webp",
 		"tags": [
 			"React",
 			"Sass"
         ],
 		"pictures": [
-			"/images/kasa/kasa-desktop1.png",
-			"/images/kasa/kasa-desktop2.png",
-			"/images/kasa/kasa-desktop3.png",
-			"/images/kasa/kasa-desktop4.png",
-			"/images/kasa/kasa-mobile1.png",
-			"/images/kasa/kasa-mobile2.png",
-			"/images/kasa/kasa-mobile3.png"
+			"/images/kasa/kasa-desktop1.webp",
+			"/images/kasa/kasa-desktop2.webp",
+			"/images/kasa/kasa-desktop3.webp",
+			"/images/kasa/kasa-desktop4.webp",
+			"/images/kasa/kasa-mobile1.webp",
+			"/images/kasa/kasa-mobile2.webp",
+			"/images/kasa/kasa-mobile3.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Kasa-P6-OCR",
@@ -146,19 +146,19 @@ export const projectsDatas = [
 		"id": "4189052",
 		"title": "Nina Carducci",
 		"info": "Optimisation des performances, du SEO, de l'accessibilité, et corrections fonctionnelles.",
-		"cover": "/images/nina-carducci/nina-carducci-cover.png",
+		"cover": "/images/nina-carducci/nina-carducci-cover.webp",
 		"tags": [
 			"JavaScript",
 			"HTML",
 			"CSS"
         ],
 		"pictures": [
-			"/images/nina-carducci/nina-carducci1.png",
-			"/images/nina-carducci/nina-carducci2.png",
-			"/images/nina-carducci/nina-carducci3.png",
-			"/images/nina-carducci/nina-carducci4.png",
-			"/images/nina-carducci/nina-carducci5.png",
-			"/images/nina-carducci/nina-carducci6.png"
+			"/images/nina-carducci/nina-carducci1.webp",
+			"/images/nina-carducci/nina-carducci2.webp",
+			"/images/nina-carducci/nina-carducci3.webp",
+			"/images/nina-carducci/nina-carducci4.webp",
+			"/images/nina-carducci/nina-carducci5.webp",
+			"/images/nina-carducci/nina-carducci6.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Nina-Carducci-P5-OCR",
@@ -201,23 +201,23 @@ export const projectsDatas = [
 		"id": "4782165",
 		"title": "Sophie Bluel",
 		"info": "Affichage et gestion dynamique d'une galerie de photos avec authentification via une API.",
-		"cover": "/images/sophie-bluel/sophie-bluel-cover.png",
+		"cover": "/images/sophie-bluel/sophie-bluel-cover.webp",
 		"tags": [
 			"JavaScript",
 			"HTML",
 			"CSS",
         ],
 		"pictures": [
-			"/images/sophie-bluel/sophie-bluel1.png",
-			"/images/sophie-bluel/sophie-bluel2.png",
-			"/images/sophie-bluel/sophie-bluel3.png",
-			"/images/sophie-bluel/sophie-bluel4.png",
-			"/images/sophie-bluel/sophie-bluel5.png",
-			"/images/sophie-bluel/sophie-bluel6.png",
-			"/images/sophie-bluel/sophie-bluel7.png",
-			"/images/sophie-bluel/sophie-bluel8.png",
-			"/images/sophie-bluel/sophie-bluel9.png",
-			"/images/sophie-bluel/sophie-bluel10.png"
+			"/images/sophie-bluel/sophie-bluel1.webp",
+			"/images/sophie-bluel/sophie-bluel2.webp",
+			"/images/sophie-bluel/sophie-bluel3.webp",
+			"/images/sophie-bluel/sophie-bluel4.webp",
+			"/images/sophie-bluel/sophie-bluel5.webp",
+			"/images/sophie-bluel/sophie-bluel6.webp",
+			"/images/sophie-bluel/sophie-bluel7.webp",
+			"/images/sophie-bluel/sophie-bluel8.webp",
+			"/images/sophie-bluel/sophie-bluel9.webp",
+			"/images/sophie-bluel/sophie-bluel10.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio-Sophie-Bluel-P3-OCR/tree/master/FrontEnd",
@@ -250,19 +250,19 @@ export const projectsDatas = [
 		"id": "9738591",
 		"title": "Booki",
 		"info": "Développement d'une page d'accueil responsive.",
-		"cover": "/images/booki/booki-cover.png",
+		"cover": "/images/booki/booki-cover.webp",
 		"tags": [
 			"HTML",
 			"CSS"
         ],
 		"pictures": [
-			"/images/booki/booki-desktop1.png",
-			"/images/booki/booki-desktop2.png",
-			"/images/booki/booki-desktop3.png",
-			"/images/booki/booki-mobile1.png",
-			"/images/booki/booki-mobile2.png",
-			"/images/booki/booki-mobile3.png",
-			"/images/booki/booki-mobile4.png"
+			"/images/booki/booki-desktop1.webp",
+			"/images/booki/booki-desktop2.webp",
+			"/images/booki/booki-desktop3.webp",
+			"/images/booki/booki-mobile1.webp",
+			"/images/booki/booki-mobile2.webp",
+			"/images/booki/booki-mobile3.webp",
+			"/images/booki/booki-mobile4.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Booki-P2-OCR",
