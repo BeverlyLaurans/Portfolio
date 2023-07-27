@@ -11,7 +11,12 @@ export const projectsDatas = [
 		"pictures": [
 			"/images/portfolio/portfolio1.webp",
 			"/images/portfolio/portfolio2.webp",
-			"/images/portfolio/portfolio3.webp"
+			"/images/portfolio/portfolio3.webp",
+			"/images/portfolio/portfolio-mobile1.webp",
+			"/images/portfolio/portfolio-mobile2.webp",
+			"/images/portfolio/portfolio-mobile3.webp",
+			"/images/portfolio/portfolio-mobile4.webp",
+			"/images/portfolio/portfolio-mobile5.webp"
 		],
 		"projectUrl": "",
 		"codeUrl": "https://github.com/BeverlyLaurans/Portfolio",
