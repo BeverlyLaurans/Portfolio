@@ -1,4 +1,4 @@
-import Avatar from "../../assets/avatar/photo-BL.jpg";
+import Avatar from "../../assets/avatar/photo-BL.webp";
 import { Link, useNavigate } from "react-router-dom";
 import "../../styles/scss/components/Error.scss";
 
