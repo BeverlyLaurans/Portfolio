@@ -46,7 +46,7 @@ export const projectsDatas = [
 			"Optimisation du SEO technique on-page et de l'accessibilité",
 			"Mise en ligne du site sur GitHub Pages",
 			"Optimisation des images du site : conversion en webP et réduction de taille",
-			// "Ajout des métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards)",
+			"Ajout des métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards)",
 			"Autres optimisations des performances du site : minification, import de la police via le CSS..." 
 		]
 	},
