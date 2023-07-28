@@ -23,7 +23,6 @@ function Footer() {
                 Mentions légales
               </a>
             </li>
-            {/* <li><a href="#">Cookies et confidentialité</a></li> */}
           </ul>
         </div>
         <div className="footer-links__social">
@@ -51,9 +50,9 @@ function Footer() {
               <br />
               <b>Hébergement :</b>
               <br />
-              Github Pages
+              Firebase
               <br />
-              88 Colin P. Kelly Jr. St.
+              188 King ST
               <br />
               San Francisco
               <br />
