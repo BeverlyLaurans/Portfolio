@@ -6,7 +6,7 @@ function Formation() {
     <section className="formation-container">
         <h2>Mes diplômes</h2>
         <div className="formation">
-            <h3>DÉVELOPPEU(R/SE) WEB : en cours de finalisation</h3>
+            <h3>DÉVELOPPEU(R/SE) INTÉGRAT(EUR/RICE) WEB </h3>
             <p>OpenClassrooms - 2023</p>
         </div>
         <div className="formation">

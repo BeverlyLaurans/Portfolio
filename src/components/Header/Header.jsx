@@ -60,7 +60,7 @@ function Header() {
           </ul>
         </nav>
         <a
-          href="/documents/CV_Beverly_Laurans_Dev_frontend_0723.pdf"
+          href="/documents/CV_Beverly_Laurans_0923.pdf"
           target="_blank"
           className="cv-btn"
         >
